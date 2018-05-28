@@ -15,6 +15,11 @@
 		4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68DF9620B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift */; };
 		4E68DF9D20B580FD00CA4CB2 /* GetImageFromId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */; };
 		4E68DF9F20B5869500CA4CB2 /* sozai_20150329_chuui.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E68DF9E20B5869500CA4CB2 /* sozai_20150329_chuui.jpg */; };
+		4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CA20BBA43D0023730B /* AppConst.swift */; };
+		4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */; };
+		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
+		4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */; };
+		4E6F25DB20BBEF850023730B /* TotalFavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25DA20BBEF850023730B /* TotalFavView.swift */; };
 		4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */; };
 		4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */; };
 		4E88EE2520B2BAB000E3FC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E88EE2420B2BAB000E3FC92 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 		4E68DF9620B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageFromId.swift; sourceTree = "<group>"; };
 		4E68DF9E20B5869500CA4CB2 /* sozai_20150329_chuui.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sozai_20150329_chuui.jpg; sourceTree = "<group>"; };
+		4E6F25CA20BBA43D0023730B /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
+		4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFromViewController.swift; sourceTree = "<group>"; };
+		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
+		4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E6F25DA20BBEF850023730B /* TotalFavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalFavView.swift; sourceTree = "<group>"; };
 		4E88EE1A20B2BAB000E3FC92 /* App01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -59,12 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E686E3C20B8062700E68706 /* UI */ = {
+		4E686E3C20B8062700E68706 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4E68DF9620B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift */,
+				4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */,
+				4E6F25DA20BBEF850023730B /* TotalFavView.swift */,
 			);
-			path = UI;
+			path = View;
 			sourceTree = "<group>";
 		};
 		4E68DF9420B5339C00CA4CB2 /* Others */ = {
@@ -93,6 +105,7 @@
 				4E686E3F20B8082400E68706 /* PersonDataStruct.swift */,
 				4E686E4120B80CE300E68706 /* ErrorSet.swift */,
 				4E68DF9220B5336700CA4CB2 /* DeviceSize.swift */,
+				4E6F25CA20BBA43D0023730B /* AppConst.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,10 +113,10 @@
 		4E88EE1120B2BAB000E3FC92 = {
 			isa = PBXGroup;
 			children = (
-				4E88EE1C20B2BAB000E3FC92 /* App01 */,
 				4E88EE2F20B2BAE000E3FC92 /* ViewController */,
-				4E686E3C20B8062700E68706 /* UI */,
+				4E686E3C20B8062700E68706 /* View */,
 				4E68DF9B20B580E100CA4CB2 /* Model */,
+				4E88EE1C20B2BAB000E3FC92 /* App01 */,
 				4E68DF9420B5339C00CA4CB2 /* Others */,
 				4E88EE1B20B2BAB000E3FC92 /* Products */,
 			);
@@ -133,6 +146,8 @@
 				4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */,
 				4E88EE3420B2C21500E3FC92 /* MatchingListViewController.swift */,
 				4E88EE3620B2C23600E3FC92 /* LikedViewController.swift */,
+				4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */,
+				4E6F25CE20BBA6430023730B /* LikeToViewController.swift */,
 				4E88EE3820B2C24000E3FC92 /* MessageListViewController.swift */,
 				4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */,
 				4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */,
@@ -214,15 +229,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */,
+				4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */,
 				4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */,
 				4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */,
+				4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */,
 				4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */,
 				4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */,
 				4E68DF9D20B580FD00CA4CB2 /* GetImageFromId.swift in Sources */,
 				4E88EE3520B2C21500E3FC92 /* MatchingListViewController.swift in Sources */,
+				4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */,
 				4E88EE3720B2C23600E3FC92 /* LikedViewController.swift in Sources */,
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
+				4E6F25DB20BBEF850023730B /* TotalFavView.swift in Sources */,
+				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,
 				4E68DF9320B5336700CA4CB2 /* DeviceSize.swift in Sources */,
 				4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */,
