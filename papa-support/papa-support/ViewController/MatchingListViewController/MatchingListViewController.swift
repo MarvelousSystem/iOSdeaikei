@@ -23,8 +23,16 @@ class MatchingListViewController: UIViewController {
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: flowLayout)
         collectionView.register(MatchingListCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(MatchingListCollectionViewCell.self))
         collectionView.dataSource = self
-        collectionView.backgroundColor = UIColor.gray
+        collectionView.backgroundColor = UIColor.white
         view.addSubview(collectionView)
+        
+        self.view.backgroundColor = UIColor.white
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem!.title = "パパ活"
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem!.title = " "
     }
     
 }

@@ -34,7 +34,6 @@ class MainTabController: UITabBarController {
         self.selectedIndex = 1
         self.selectedIndex = 0
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

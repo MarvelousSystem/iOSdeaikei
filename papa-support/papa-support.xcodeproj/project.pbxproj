@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */; };
 		4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */; };
 		4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E3F20B8082400E68706 /* PersonDataStruct.swift */; };
 		4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E4120B80CE300E68706 /* ErrorSet.swift */; };
@@ -15,11 +16,14 @@
 		4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68DF9620B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift */; };
 		4E68DF9D20B580FD00CA4CB2 /* GetImageFromId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */; };
 		4E68DF9F20B5869500CA4CB2 /* sozai_20150329_chuui.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E68DF9E20B5869500CA4CB2 /* sozai_20150329_chuui.jpg */; };
+		4E68E65220C1627E0096FF26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68E65120C1627E0096FF26 /* DetailViewController.swift */; };
+		4E68E65420C16F860096FF26 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68E65320C16F860096FF26 /* AdViewController.swift */; };
+		4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68E65520C170FB0096FF26 /* IconViewController.swift */; };
 		4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CA20BBA43D0023730B /* AppConst.swift */; };
 		4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */; };
 		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
 		4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */; };
-		4E6F25DB20BBEF850023730B /* TotalFavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25DA20BBEF850023730B /* TotalFavView.swift */; };
+		4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */; };
 		4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */; };
 		4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */; };
 		4E88EE2520B2BAB000E3FC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E88EE2420B2BAB000E3FC92 /* Assets.xcassets */; };
@@ -30,7 +34,6 @@
 		4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */; };
 		4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */; };
 		4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */; };
-		4EBBA25D20BE5C4E004AD6E9 /* FirebaseAppdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25C20BE5C4E004AD6E9 /* FirebaseAppdelegate.swift */; };
 		4ECBDF6020BE8C7200FC975C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBDF5F20BE8C7200FC975C /* GoogleService-Info.plist */; };
 		EAE8584471E2D37BA6987EAB /* Pods_papa_support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8769D2B1BC31394EC37ED0B /* Pods_papa_support.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,7 @@
 /* Begin PBXFileReference section */
 		1DD2786C136139D9467F77A4 /* Pods-papa-support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-papa-support.release.xcconfig"; path = "Pods/Target Support Files/Pods-papa-support/Pods-papa-support.release.xcconfig"; sourceTree = "<group>"; };
 		3D4DC0637462E1EE60FBA068 /* Pods-App01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App01/Pods-App01.debug.xcconfig"; sourceTree = "<group>"; };
+		4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSmsAuthentication.swift; sourceTree = "<group>"; };
 		4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDataFromId.swift; sourceTree = "<group>"; };
 		4E686E3F20B8082400E68706 /* PersonDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataStruct.swift; sourceTree = "<group>"; };
 		4E686E4120B80CE300E68706 /* ErrorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSet.swift; sourceTree = "<group>"; };
@@ -46,11 +50,14 @@
 		4E68DF9620B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageFromId.swift; sourceTree = "<group>"; };
 		4E68DF9E20B5869500CA4CB2 /* sozai_20150329_chuui.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sozai_20150329_chuui.jpg; sourceTree = "<group>"; };
+		4E68E65120C1627E0096FF26 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4E68E65320C16F860096FF26 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		4E68E65520C170FB0096FF26 /* IconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
 		4E6F25CA20BBA43D0023730B /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFromViewController.swift; sourceTree = "<group>"; };
 		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
 		4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCollectionViewCell.swift; sourceTree = "<group>"; };
-		4E6F25DA20BBEF850023730B /* TotalFavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalFavView.swift; sourceTree = "<group>"; };
+		4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		4E88EE1A20B2BAB000E3FC92 /* papa-support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "papa-support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -63,7 +70,6 @@
 		4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewTableViewCell.swift; sourceTree = "<group>"; };
-		4EBBA25C20BE5C4E004AD6E9 /* FirebaseAppdelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppdelegate.swift; sourceTree = "<group>"; };
 		4EBBA25E20BE654F004AD6E9 /* papa-support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "papa-support.entitlements"; sourceTree = "<group>"; };
 		4ECBDF5F20BE8C7200FC975C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80406C9B43CB5535BA88C31A /* Pods-App01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App01.release.xcconfig"; path = "Pods/Target Support Files/Pods-App01/Pods-App01.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +95,6 @@
 			children = (
 				4E68DF9620B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift */,
 				4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */,
-				4E6F25DA20BBEF850023730B /* TotalFavView.swift */,
 				4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */,
 			);
 			path = View;
@@ -123,6 +128,51 @@
 				4E6F25CA20BBA43D0023730B /* AppConst.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4E68E65020C162340096FF26 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */,
+				4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */,
+				4E7A458720C549D90061CD5C /* ゴミ */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		4E7A458320C541CF0061CD5C /* MatchingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E88EE3420B2C21500E3FC92 /* MatchingListViewController.swift */,
+			);
+			path = MatchingListViewController;
+			sourceTree = "<group>";
+		};
+		4E7A458520C5420F0061CD5C /* MessageListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E88EE3820B2C24000E3FC92 /* MessageListViewController.swift */,
+			);
+			path = MessageListViewController;
+			sourceTree = "<group>";
+		};
+		4E7A458620C5421F0061CD5C /* ScheduleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */,
+			);
+			path = ScheduleViewController;
+			sourceTree = "<group>";
+		};
+		4E7A458720C549D90061CD5C /* ゴミ */ = {
+			isa = PBXGroup;
+			children = (
+				4E68E65520C170FB0096FF26 /* IconViewController.swift */,
+				4E68E65120C1627E0096FF26 /* DetailViewController.swift */,
+				4E68E65320C16F860096FF26 /* AdViewController.swift */,
+			);
+			name = "ゴミ";
+			path = "ゴミ";
 			sourceTree = "<group>";
 		};
 		4E88EE1120B2BAB000E3FC92 = {
@@ -165,11 +215,11 @@
 			isa = PBXGroup;
 			children = (
 				4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */,
-				4E88EE3420B2C21500E3FC92 /* MatchingListViewController.swift */,
+				4E7A458320C541CF0061CD5C /* MatchingListViewController */,
 				4EBBA25620BE4196004AD6E9 /* LikedView */,
-				4E88EE3820B2C24000E3FC92 /* MessageListViewController.swift */,
-				4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */,
-				4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */,
+				4E7A458520C5420F0061CD5C /* MessageListViewController */,
+				4E7A458620C5421F0061CD5C /* ScheduleViewController */,
+				4E68E65020C162340096FF26 /* ProfileViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -187,7 +237,7 @@
 		4EBBA25B20BE5C21004AD6E9 /* Model-Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				4EBBA25C20BE5C4E004AD6E9 /* FirebaseAppdelegate.swift */,
+				4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */,
 			);
 			path = "Model-Firebase";
 			sourceTree = "<group>";
@@ -338,10 +388,12 @@
 			files = (
 				4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */,
 				4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */,
+				4E68E65220C1627E0096FF26 /* DetailViewController.swift in Sources */,
 				4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */,
 				4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */,
 				4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */,
-				4EBBA25D20BE5C4E004AD6E9 /* FirebaseAppdelegate.swift in Sources */,
+				4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */,
+				4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */,
 				4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */,
 				4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */,
 				4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */,
@@ -351,11 +403,12 @@
 				4E88EE3720B2C23600E3FC92 /* LikedViewController.swift in Sources */,
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
-				4E6F25DB20BBEF850023730B /* TotalFavView.swift in Sources */,
 				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,
 				4E68DF9320B5336700CA4CB2 /* DeviceSize.swift in Sources */,
 				4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */,
+				4E68E65420C16F860096FF26 /* AdViewController.swift in Sources */,
+				4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

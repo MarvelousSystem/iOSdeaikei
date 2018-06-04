@@ -3,7 +3,7 @@
 
 import UIKit
 
-// MARK vars and lifecycles
+// MARK: vars and lifecycles
 class LikedViewController: UIViewController {
     // vars
     var collectionView: UICollectionView!
@@ -16,6 +16,13 @@ class LikedViewController: UIViewController {
         super.viewDidLoad()
         SetContainerView()
         SetCollectionViewSet()
+        self.view.backgroundColor = UIColor.white
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem!.title = "いいね"
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem!.title = " "
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -60,7 +67,7 @@ class LikedViewController: UIViewController {
     }
 }
 
-// MARK -UICollectionViewDelegate, UICollectionViewDataSource
+// MARK: -UICollectionViewDelegate, UICollectionViewDataSource
 extension LikedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return pageList.count
