@@ -80,7 +80,11 @@ extension LikedViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        return
+        print(indexPath.row)
+        
+        //選択された所に遷移
+        
+        
     }
 }
 
@@ -99,7 +103,7 @@ class LikedViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         MakeViewController()
-        setViewControllers([pageControllers[0]], direction: .forward, animated: false, completion: nil)
+        setViewControllers(setViewControllers([pageControllers[0]], direction: .forward, animated: false, completion: nil)[pageControllers[0]], direction: .forward, animated: false, completion: nil)
         CollectionViewLayoutSet()
         // PageViewController and CollectionVIew
         self.dataSource = self

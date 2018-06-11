@@ -26,9 +26,14 @@ class ProfileViewController: UIViewController {
     }
     // プロフィールの部分
     func SetIconImageView() {
+        var backgroundImageView: UIImageView!
         var iconImageView: UIImageView!
-        iconImageView = UIImageView(frame: CGRect(x: 0, y: DeviceSize.statusBarHeight, width: DeviceSize.screenWidth, height: DeviceSize.screenHeight / 4))
-        view.addSubview(iconImageView)
+        backgroundImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: DeviceSize.screenWidth, height: DeviceSize.screenHeight / 4 + DeviceSize.statusBarHeight))
+        backgroundImageView.backgroundColor = UIColor.blue
+        iconImageView = UIImageView(frame: CGRect(x: DeviceSize.screenWidth / 2 - DeviceSize.screenHeight / 4 / 3 / 2, y: DeviceSize.screenHeight / 4 / 3, width: DeviceSize.screenHeight / 4 / 3, height: DeviceSize.screenHeight / 4 / 3))
+        iconImageView.backgroundColor = UIColor.white
+        backgroundImageView.addSubview(iconImageView)
+        view.addSubview(backgroundImageView)
     }
     // メニューの部分
     func SetButton() {

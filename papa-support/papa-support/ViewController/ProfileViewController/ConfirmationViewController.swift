@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ConfirmationViewController: UIViewController {
 
@@ -14,7 +15,6 @@ class ConfirmationViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         setButton()
-        FirebaseSmsAuthentication.phoneAuthSend(phoneNumber: "08022465704")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,8 +31,23 @@ class ConfirmationViewController: UIViewController {
         button = UIButton(frame: CGRect(x: 0, y: DeviceSize.screenHeight - DeviceSize.tabBarHeight, width: DeviceSize.screenWidth, height: DeviceSize.tabBarHeight))
         button.setTitleColor(UIColor.black , for: UIControlState.normal)
         button.setTitle("本人確認をする", for: UIControlState.normal)
+        button.addTarget(self, action: #selector(self.tapped), for: .touchUpInside)
         self.view.addSubview(button)
     }
-    
-    
+    @objc func tapped() {
+        // 普通に電話番号を入力するとInvalid format となる
+        FirebaseSmsAuthentication.phoneAuthSend(phoneNumber: "有効な電話番号を入力")
+        let verificationID = UserDefaults.standard.string(forKey: "authVerificationID")
+        if let verificationID = verificationID {
+            print(verificationID)
+        } else {
+            print("error")
+        }
+        //PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
+        //    if let error = error {
+        //        print(error.localizedDescription)
+        return
+            // Sign in using the verificationID and the code sent to the user
+            //
+    }
 }

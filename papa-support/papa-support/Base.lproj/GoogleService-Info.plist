@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>334009539575-b9rqi9to0nqquu8mvgototefe5p8ao9f.apps.googleusercontent.com</string>
+	<string>363823121299-05jet4t8e9q62423bpr8ptfvrvquk3jo.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.334009539575-b9rqi9to0nqquu8mvgototefe5p8ao9f</string>
+	<string>com.googleusercontent.apps.363823121299-05jet4t8e9q62423bpr8ptfvrvquk3jo</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBvaGwlsa3oax4_6bV1I2KYusL3OrVp92Q</string>
+	<string>AIzaSyB8YrJC1Mxrlf3-h0pxk_eQepu1zlp5CRg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>334009539575</string>
+	<string>363823121299</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>support.papa.papa-support-app</string>
 	<key>PROJECT_ID</key>
-	<string>papa-support-app</string>
+	<string>papaapp-56840</string>
 	<key>STORAGE_BUCKET</key>
-	<string>papa-support-app.appspot.com</string>
+	<string>papaapp-56840.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:334009539575:ios:6ef5e179c68f190a</string>
+	<string>1:363823121299:ios:6ef5e179c68f190a</string>
 	<key>DATABASE_URL</key>
-	<string>https://papa-support-app.firebaseio.com</string>
+	<string>https://papaapp-56840.firebaseio.com</string>
 </dict>
 </plist>
