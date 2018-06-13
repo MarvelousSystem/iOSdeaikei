@@ -22,6 +22,7 @@
 		4E6B6F2F20D0C14E00C4F3D8 /* MessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F2E20D0C14E00C4F3D8 /* MessageListTableViewCell.swift */; };
 		4E6B6F3120D0E6FC00C4F3D8 /* LoginInfomationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F3020D0E6FC00C4F3D8 /* LoginInfomationModel.swift */; };
 		4E6B6F9320D103CE00C4F3D8 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */; };
+		4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */; };
 		4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CA20BBA43D0023730B /* AppConst.swift */; };
 		4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */; };
 		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
@@ -61,6 +62,7 @@
 		4E6B6F3020D0E6FC00C4F3D8 /* LoginInfomationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfomationModel.swift; sourceTree = "<group>"; };
 		4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationOrLoginViewController.swift; sourceTree = "<group>"; };
 		4E6F25CA20BBA43D0023730B /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFromViewController.swift; sourceTree = "<group>"; };
 		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */,
+				4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */,
 				4E7A458320C541CF0061CD5C /* MatchingListViewController */,
 				4EBBA25620BE4196004AD6E9 /* LikedView */,
 				4E7A458520C5420F0061CD5C /* MessageListViewController */,
@@ -421,6 +424,7 @@
 				4E88EE3720B2C23600E3FC92 /* LikedViewController.swift in Sources */,
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
+				4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */,
 				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,
 				4E68DF9320B5336700CA4CB2 /* DeviceSize.swift in Sources */,

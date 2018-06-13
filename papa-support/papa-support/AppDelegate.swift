@@ -1,7 +1,3 @@
-/*
- Firebase追加
-*/
-
 
 import UIKit
 import Firebase
@@ -10,16 +6,22 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    //起動時に生成する画面
-    var myNavigationController: UINavigationController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        // myNavigationControllerの設定
-        let first = MainTabController()
-        myNavigationController = UINavigationController(rootViewController: first)
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = myNavigationController
+        // ログイン状態によってアプリ起動時の表示画面を分岐
+        if (UserDefaults.standard.object(forKey: "LoginID") == nil || UserDefaults.standard.object(forKey: "Password") == nil) {
+            // ログインをしていなければログイン画面へ
+            let first = RegistrationOrLoginViewController()
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = first
+        } else {
+            // ログインをしていればアプリ画面へ
+            let first = MainTabController()
+            var myNavigationController: UINavigationController?
+            myNavigationController = UINavigationController(rootViewController: first)
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = myNavigationController
+        }
         self.window?.makeKeyAndVisible()
         // Firebase
         FirebaseApp.configure()
