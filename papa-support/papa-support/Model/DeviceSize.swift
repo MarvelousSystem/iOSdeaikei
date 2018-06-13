@@ -18,4 +18,5 @@ class DeviceSize {
     static let tabBarHeight = Double(UITabBarController().tabBar.frame.size.height)
     // 2次
     static let LikedViewTableViewCellHeight = Double(UIScreen.main.bounds.size.height / 7)
+    static let MessageListViewCellHeight = Double(UIScreen.main.bounds.size.height / 10)
 }

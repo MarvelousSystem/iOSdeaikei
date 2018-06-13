@@ -35,8 +35,9 @@ class ConfirmationViewController: UIViewController {
         self.view.addSubview(button)
     }
     @objc func tapped() {
-        // 普通に電話番号を入力するとInvalid format となる
-        FirebaseSmsAuthentication.phoneAuthSend(phoneNumber: "有効な電話番号を入力")
+        // 国番号 + 電話番号
+        let phoneNumber: String = "+81" + "08022465704"
+        FirebaseSmsAuthentication.phoneAuthSend(phoneNumber: phoneNumber)
         let verificationID = UserDefaults.standard.string(forKey: "authVerificationID")
         if let verificationID = verificationID {
             print(verificationID)
