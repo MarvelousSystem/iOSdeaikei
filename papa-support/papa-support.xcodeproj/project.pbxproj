@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5DC31420D26B3C00689281 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */; };
+		4E5DC31720D2728600689281 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31620D2728600689281 /* StartViewController.swift */; };
+		4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31920D2747200689281 /* UIColorHex.swift */; };
+		4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31B20D27C2000689281 /* RegisterViewController.swift */; };
+		4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31D20D27C2B00689281 /* LoginViewController.swift */; };
 		4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */; };
 		4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */; };
 		4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E3F20B8082400E68706 /* PersonDataStruct.swift */; };
@@ -23,6 +28,7 @@
 		4E6B6F3120D0E6FC00C4F3D8 /* LoginInfomationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F3020D0E6FC00C4F3D8 /* LoginInfomationModel.swift */; };
 		4E6B6F9320D103CE00C4F3D8 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */; };
 		4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */; };
+		4E6B6F9720D1478700C4F3D8 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */; };
 		4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CA20BBA43D0023730B /* AppConst.swift */; };
 		4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */; };
 		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
@@ -46,6 +52,11 @@
 /* Begin PBXFileReference section */
 		1DD2786C136139D9467F77A4 /* Pods-papa-support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-papa-support.release.xcconfig"; path = "Pods/Target Support Files/Pods-papa-support/Pods-papa-support.release.xcconfig"; sourceTree = "<group>"; };
 		3D4DC0637462E1EE60FBA068 /* Pods-App01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App01/Pods-App01.debug.xcconfig"; sourceTree = "<group>"; };
+		4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		4E5DC31620D2728600689281 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		4E5DC31920D2747200689281 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		4E5DC31B20D27C2000689281 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4E5DC31D20D27C2B00689281 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSmsAuthentication.swift; sourceTree = "<group>"; };
 		4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDataFromId.swift; sourceTree = "<group>"; };
 		4E686E3F20B8082400E68706 /* PersonDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataStruct.swift; sourceTree = "<group>"; };
@@ -63,6 +74,7 @@
 		4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationOrLoginViewController.swift; sourceTree = "<group>"; };
+		4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		4E6F25CA20BBA43D0023730B /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFromViewController.swift; sourceTree = "<group>"; };
 		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E5DC31520D2725A00689281 /* RegistrationAndLogin */ = {
+			isa = PBXGroup;
+			children = (
+				4E5DC31620D2728600689281 /* StartViewController.swift */,
+				4E5DC31B20D27C2000689281 /* RegisterViewController.swift */,
+				4E5DC31D20D27C2B00689281 /* LoginViewController.swift */,
+			);
+			path = RegistrationAndLogin;
+			sourceTree = "<group>";
+		};
+		4E5DC31820D2744E00689281 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4E5DC31920D2747200689281 /* UIColorHex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4E686E3C20B8062700E68706 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +162,7 @@
 		4E68DF9B20B580E100CA4CB2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */,
 				4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */,
 				4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */,
 				4E686E3F20B8082400E68706 /* PersonDataStruct.swift */,
@@ -218,6 +249,8 @@
 				4E88EE2620B2BAB000E3FC92 /* LaunchScreen.storyboard */,
 				4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */,
 				4E9B645220CE5DA1003C75B1 /* Base.lproj */,
+				4E5DC31520D2725A00689281 /* RegistrationAndLogin */,
+				4E5DC31820D2744E00689281 /* Extension */,
 				4E88EE2F20B2BAE000E3FC92 /* ViewController */,
 				4E686E3C20B8062700E68706 /* View */,
 				4E68DF9B20B580E100CA4CB2 /* Model */,
@@ -232,6 +265,7 @@
 			children = (
 				4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */,
 				4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */,
+				4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */,
 				4E7A458320C541CF0061CD5C /* MatchingListViewController */,
 				4EBBA25620BE4196004AD6E9 /* LikedView */,
 				4E7A458520C5420F0061CD5C /* MessageListViewController */,
@@ -405,9 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */,
+				4E6B6F9720D1478700C4F3D8 /* LoginModel.swift in Sources */,
 				4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */,
 				4E68E65220C1627E0096FF26 /* DetailViewController.swift in Sources */,
 				4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */,
+				4E5DC31720D2728600689281 /* StartViewController.swift in Sources */,
 				4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */,
 				4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */,
 				4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */,
@@ -423,14 +459,18 @@
 				4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */,
 				4E88EE3720B2C23600E3FC92 /* LikedViewController.swift in Sources */,
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
+				4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
 				4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */,
 				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,
 				4E68DF9320B5336700CA4CB2 /* DeviceSize.swift in Sources */,
 				4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */,
+				4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */,
+				4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */,
 				4E68E65420C16F860096FF26 /* AdViewController.swift in Sources */,
 				4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */,
+				4E5DC31420D26B3C00689281 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

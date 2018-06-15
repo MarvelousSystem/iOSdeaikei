@@ -11,10 +11,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ログイン状態によってアプリ起動時の表示画面を分岐
         if (UserDefaults.standard.object(forKey: "LoginID") == nil || UserDefaults.standard.object(forKey: "Password") == nil) {
             // ログインをしていなければログイン画面へ
-            let first = RegistrationOrLoginViewController()
+            let first = StartViewController()
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.rootViewController = first
-        } else {
+        }
+        else {
             // ログインをしていればアプリ画面へ
             let first = MainTabController()
             var myNavigationController: UINavigationController?

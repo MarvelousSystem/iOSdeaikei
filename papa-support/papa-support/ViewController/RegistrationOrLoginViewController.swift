@@ -23,6 +23,7 @@ class RegistrationOrLoginViewController: UIViewController {
         setTelTextField()
         setPasswordTextField()
         setButton()
+        setRegisterButton()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -60,13 +61,41 @@ class RegistrationOrLoginViewController: UIViewController {
         button_1.addTarget(self, action: #selector(self.tapped), for: .touchUpInside)
         self.view.addSubview(button_1)
     }
+    // 会員登録ボタン
+    func setRegisterButton() {
+        let button_2: UIButton = UIButton()
+        button_2.backgroundColor = UIColor.white
+        button_2.frame = CGRect(x: (DeviceSize.screenWidth - Double(self.view.bounds.width) / 4 * 3) / 2, y: Double(self.view.bounds.height) - DeviceSize.tabBarHeight * 8, width: Double(self.view.bounds.width) / 4 * 3, height: DeviceSize.tabBarHeight)
+        button_2.setTitle("会員登録", for: UIControlState.normal)
+        button_2.setTitleColor(UIColor.black , for: UIControlState.normal)
+        button_2.addTarget(self, action: #selector(self.tapped_2), for: .touchUpInside)
+        self.view.addSubview(button_2)
+    }
     // ボタンがタップされたとき
     @objc func tapped() {
         self.telTextFieldString = String(self.telTextField.text!)
         self.passwordTextFieldString = self.passwordTextField.text!
+        var success: Bool = false
         let passwordSha256: String = self.telTextFieldString.sha256
-        let url: String = "https://papa.support/api/v1/login/?tel=\(self.telTextFieldString)&password=\(passwordSha256)"
-        print(url)
+        var url: String = "https://papa.support/api/v1/login/?tel=\(self.telTextFieldString)&password=\(passwordSha256)"
+        // テスト(テストアカウントでログインしているので注意)
+        url = "https://papa.support/api/v1/login/?tel=09024643115&password=2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e730"
+        let data: Data! = LoginModel.sendLoginInformationToServer(url: url)
+        print(data)
+        success = true
+        // ログインに成功したらメイン画面へ
+        if (success) {
+            let first = MainTabController()
+            var myNavigationController: UINavigationController?
+            myNavigationController = UINavigationController(rootViewController: first)
+            present(myNavigationController!, animated: true, completion: nil)
+        } else {
+            print("ログインに失敗しました")
+        }
         return
+    }
+    @objc func tapped_2() {
+        let registrationViewController = RegistrationViewController()
+        present(registrationViewController, animated: true, completion: nil)
     }
 }
