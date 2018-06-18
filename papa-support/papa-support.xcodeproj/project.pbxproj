@@ -33,6 +33,8 @@
 		4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */; };
 		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
 		4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */; };
+		4E786A4120D79B2300D50A46 /* GetCSRF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4020D79B2300D50A46 /* GetCSRF.swift */; };
+		4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4220D79B6500D50A46 /* GetJSON.swift */; };
 		4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */; };
 		4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */; };
 		4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */; };
@@ -79,6 +81,8 @@
 		4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFromViewController.swift; sourceTree = "<group>"; };
 		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
 		4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E786A4020D79B2300D50A46 /* GetCSRF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCSRF.swift; sourceTree = "<group>"; };
+		4E786A4220D79B6500D50A46 /* GetJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJSON.swift; sourceTree = "<group>"; };
 		4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		4E88EE1A20B2BAB000E3FC92 /* papa-support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "papa-support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */,
+				4E786A4020D79B2300D50A46 /* GetCSRF.swift */,
+				4E786A4220D79B6500D50A46 /* GetJSON.swift */,
 				4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */,
 				4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */,
 				4E686E3F20B8082400E68706 /* PersonDataStruct.swift */,
@@ -458,6 +464,7 @@
 				4E6B6F2F20D0C14E00C4F3D8 /* MessageListTableViewCell.swift in Sources */,
 				4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */,
 				4E88EE3720B2C23600E3FC92 /* LikedViewController.swift in Sources */,
+				4E786A4120D79B2300D50A46 /* GetCSRF.swift in Sources */,
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
@@ -468,6 +475,7 @@
 				4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */,
 				4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */,
 				4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */,
+				4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */,
 				4E68E65420C16F860096FF26 /* AdViewController.swift in Sources */,
 				4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */,
 				4E5DC31420D26B3C00689281 /* RegistrationViewController.swift in Sources */,

@@ -93,8 +93,20 @@ class RegisterViewController: UIViewController {
     }
     // 登録情報送信ボタンが押されたとき
     @objc func tappedSendButton() {
+        // DeviceToken（String）の取得
+        var deviceTokenString: String!
+        if (UserDefaults.standard.string(forKey: "deviceTokenString") == nil) {
+            deviceTokenString = ""
+        } else {
+            deviceTokenString = UserDefaults.standard.string(forKey: "deviceTokenString") //<- appDelegate.swiftで保存しておいたdeviceToken
+        }
+        // CSRFの取得
+        let csrf = GetCSRF.getCSRF()
+        if (csrf == "error") {return}
         // サーバーに送信するURLを生成する
+        var url: String = "https://papa.support/api/v1/register/?nickname=\(self.nicknameTextFieldString)&tel=\(self.phoneNumberFieldString)&mail=&\(self.mailFieldString)area=13&sex=m&birth_day=\(self.birthDateTextFieldString)&password=\(self.passwordFieldString)&device_token=\(deviceTokenString)&firebase_uid=testuid&csrf=\(csrf)"
         
+        // 画面遷移
         let first = MainTabController()
         var myNavigationController: UINavigationController?
         myNavigationController = UINavigationController(rootViewController: first)
@@ -179,7 +191,7 @@ class RegisterViewController: UIViewController {
         pickerToolBar.items = [spaceBarButton, toolBarButton]
         birthDateTextField.inputAccessoryView = pickerToolBar //<- セット
         // 日付フィールドの設定
-        dateFormat.dateFormat = "yyyy年MM月dd日"
+        dateFormat.dateFormat = "yyyy-MM-dd"
     }
     // ツールバーボタンが押されたとき
     @objc func toolBarButtonPush() {
