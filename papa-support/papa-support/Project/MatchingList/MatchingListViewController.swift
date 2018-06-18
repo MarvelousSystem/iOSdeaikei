@@ -1,38 +1,46 @@
-//  Created by Miyamoto on 2018/05/21.
-//  Copyright © 2018年 MiyamotoSota. All rights reserved.
+
+
 
 import UIKit
 import Foundation
 
 // MARK: vars and lifecycle
 class MatchingListViewController: UIViewController {
-    
-    //宣言
+    // vars
     var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // レイアウト作成
+        // Layout
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         flowLayout.minimumLineSpacing = 2.5
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.sectionInset = UIEdgeInsets(top: 2.5,left: 2.5,bottom: 2.5,right: 2.5)
         flowLayout.itemSize = CGSize(width: DeviceSize.screenWidth / 2 - 2.5 - 1.25 , height: DeviceSize.screenHeight / 3)
-        // コレクションビュー作成
+        // CollectionView
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: flowLayout)
         collectionView.register(MatchingListCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(MatchingListCollectionViewCell.self))
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = UIColor.white
         view.addSubview(collectionView)
-        
         self.view.backgroundColor = UIColor.white
+        // Navigationbar
+        //let myBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.action, target: self, action: #selector(onClickMyBarButton))
+        //self.navigationItem.leftBarButtonItem = myBarButton
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = "パパ活"
     }
     override func viewDidDisappear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = " "
+    }
+    // TappedEvent
+    @objc func addTapped(){
+        print("onClickMyBarButton:")
     }
     
 }
@@ -59,9 +67,11 @@ extension MatchingListViewController: UICollectionViewDataSource {
 // MARK: -UICollectionViewDelegate
 extension MatchingListViewController: UICollectionViewDelegate {
     
-    // アイテムタッチ時の処理（UICollectionViewDelegate が必要）
+    // When Item was Touched
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        MatchingListPresenter.indexPathRowOfCell = indexPath.row
+        let next = MatchingDetailViewController()
+        present(next, animated: true, completion: nil)
     }
 
 }

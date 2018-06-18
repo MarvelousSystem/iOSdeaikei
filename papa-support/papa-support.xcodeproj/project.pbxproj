@@ -26,7 +26,6 @@
 		4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68E65520C170FB0096FF26 /* IconViewController.swift */; };
 		4E6B6F2F20D0C14E00C4F3D8 /* MessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F2E20D0C14E00C4F3D8 /* MessageListTableViewCell.swift */; };
 		4E6B6F3120D0E6FC00C4F3D8 /* LoginInfomationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F3020D0E6FC00C4F3D8 /* LoginInfomationModel.swift */; };
-		4E6B6F9320D103CE00C4F3D8 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */; };
 		4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */; };
 		4E6B6F9720D1478700C4F3D8 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */; };
 		4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CA20BBA43D0023730B /* AppConst.swift */; };
@@ -48,6 +47,9 @@
 		4E9B645320CE5DA1003C75B1 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B645220CE5DA1003C75B1 /* Base.lproj */; };
 		4E9B645420CE5DBC003C75B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B645620CE5DBC003C75B1 /* GoogleService-Info.plist */; };
 		4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */; };
+		4EE8D8CE20D7D3DD00B27815 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */; };
+		4EE8D8D020D7EAC000B27815 /* MatchingListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */; };
+		4EE8D8D320D7EBF600B27815 /* MatchingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8D220D7EBF600B27815 /* MatchingDetailViewController.swift */; };
 		EAE8584471E2D37BA6987EAB /* Pods_papa_support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8769D2B1BC31394EC37ED0B /* Pods_papa_support.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +75,7 @@
 		4E68E65520C170FB0096FF26 /* IconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
 		4E6B6F2E20D0C14E00C4F3D8 /* MessageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewCell.swift; sourceTree = "<group>"; };
 		4E6B6F3020D0E6FC00C4F3D8 /* LoginInfomationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfomationModel.swift; sourceTree = "<group>"; };
-		4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = "/Users/miamoto/Desktop/papa-support/papa-support/Others/BridgingHeader.h"; sourceTree = "<absolute>"; };
 		4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationOrLoginViewController.swift; sourceTree = "<group>"; };
 		4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		4E6F25CA20BBA43D0023730B /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
@@ -99,6 +100,9 @@
 		4E9B645520CE5DBC003C75B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewTableViewCell.swift; sourceTree = "<group>"; };
 		4EBBA25E20BE654F004AD6E9 /* papa-support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "papa-support.entitlements"; sourceTree = "<group>"; };
+		4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListPresenter.swift; sourceTree = "<group>"; };
+		4EE8D8D220D7EBF600B27815 /* MatchingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDetailViewController.swift; sourceTree = "<group>"; };
 		80406C9B43CB5535BA88C31A /* Pods-App01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App01.release.xcconfig"; path = "Pods/Target Support Files/Pods-App01/Pods-App01.release.xcconfig"; sourceTree = "<group>"; };
 		9DA6C8263BBC45A1B1A316D9 /* Pods-papa-support.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-papa-support.debug.xcconfig"; path = "Pods/Target Support Files/Pods-papa-support/Pods-papa-support.debug.xcconfig"; sourceTree = "<group>"; };
 		F03D33780A30F39683D28EEB /* Pods_App01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,14 +131,6 @@
 			path = RegistrationAndLogin;
 			sourceTree = "<group>";
 		};
-		4E5DC31820D2744E00689281 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				4E5DC31920D2747200689281 /* UIColorHex.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		4E686E3C20B8062700E68706 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +145,9 @@
 		4E68DF9420B5339C00CA4CB2 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				4E5DC31920D2747200689281 /* UIColorHex.swift */,
+				4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */,
+				4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */,
 				4E68DF9520B5669500CA4CB2 /* Materials */,
 			);
 			path = Others;
@@ -185,17 +184,18 @@
 			children = (
 				4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */,
 				4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */,
-				4E7A458720C549D90061CD5C /* ゴミ */,
 			);
 			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
-		4E7A458320C541CF0061CD5C /* MatchingListViewController */ = {
+		4E7A458320C541CF0061CD5C /* MatchingList */ = {
 			isa = PBXGroup;
 			children = (
 				4E88EE3420B2C21500E3FC92 /* MatchingListViewController.swift */,
+				4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */,
+				4EE8D8D120D7EB9700B27815 /* MatchingDetail */,
 			);
-			path = MatchingListViewController;
+			path = MatchingList;
 			sourceTree = "<group>";
 		};
 		4E7A458520C5420F0061CD5C /* MessageListViewController */ = {
@@ -214,22 +214,9 @@
 			path = ScheduleViewController;
 			sourceTree = "<group>";
 		};
-		4E7A458720C549D90061CD5C /* ゴミ */ = {
-			isa = PBXGroup;
-			children = (
-				4E68E65520C170FB0096FF26 /* IconViewController.swift */,
-				4E68E65120C1627E0096FF26 /* DetailViewController.swift */,
-				4E68E65320C16F860096FF26 /* AdViewController.swift */,
-			);
-			name = "ゴミ";
-			path = "ゴミ";
-			sourceTree = "<group>";
-		};
 		4E88EE1120B2BAB000E3FC92 = {
 			isa = PBXGroup;
 			children = (
-				4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */,
-				4E6B6F9220D103CE00C4F3D8 /* SHA256.swift */,
 				4E88EE1C20B2BAB000E3FC92 /* papa-support */,
 				4E88EE1B20B2BAB000E3FC92 /* Products */,
 				7FCA123573D2D1C40B5E6A5B /* Pods */,
@@ -248,16 +235,14 @@
 		4E88EE1C20B2BAB000E3FC92 /* papa-support */ = {
 			isa = PBXGroup;
 			children = (
+				4E9B645220CE5DA1003C75B1 /* Base.lproj */,
 				4EBBA25E20BE654F004AD6E9 /* papa-support.entitlements */,
 				4E9B645620CE5DBC003C75B1 /* GoogleService-Info.plist */,
 				4E88EE2920B2BAB000E3FC92 /* Info.plist */,
 				4E88EE2420B2BAB000E3FC92 /* Assets.xcassets */,
 				4E88EE2620B2BAB000E3FC92 /* LaunchScreen.storyboard */,
 				4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */,
-				4E9B645220CE5DA1003C75B1 /* Base.lproj */,
-				4E5DC31520D2725A00689281 /* RegistrationAndLogin */,
-				4E5DC31820D2744E00689281 /* Extension */,
-				4E88EE2F20B2BAE000E3FC92 /* ViewController */,
+				4E88EE2F20B2BAE000E3FC92 /* Project */,
 				4E686E3C20B8062700E68706 /* View */,
 				4E68DF9B20B580E100CA4CB2 /* Model */,
 				4EBBA25B20BE5C21004AD6E9 /* Model-Firebase */,
@@ -266,19 +251,19 @@
 			path = "papa-support";
 			sourceTree = "<group>";
 		};
-		4E88EE2F20B2BAE000E3FC92 /* ViewController */ = {
+		4E88EE2F20B2BAE000E3FC92 /* Project */ = {
 			isa = PBXGroup;
 			children = (
 				4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */,
-				4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */,
-				4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */,
-				4E7A458320C541CF0061CD5C /* MatchingListViewController */,
+				4E5DC31520D2725A00689281 /* RegistrationAndLogin */,
+				4E7A458320C541CF0061CD5C /* MatchingList */,
 				4EBBA25620BE4196004AD6E9 /* LikedView */,
 				4E7A458520C5420F0061CD5C /* MessageListViewController */,
 				4E7A458620C5421F0061CD5C /* ScheduleViewController */,
 				4E68E65020C162340096FF26 /* ProfileViewController */,
+				4EE8D8CC20D7D36A00B27815 /* Gomi */,
 			);
-			path = ViewController;
+			path = Project;
 			sourceTree = "<group>";
 		};
 		4EBBA25620BE4196004AD6E9 /* LikedView */ = {
@@ -297,6 +282,26 @@
 				4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */,
 			);
 			path = "Model-Firebase";
+			sourceTree = "<group>";
+		};
+		4EE8D8CC20D7D36A00B27815 /* Gomi */ = {
+			isa = PBXGroup;
+			children = (
+				4E68E65120C1627E0096FF26 /* DetailViewController.swift */,
+				4E68E65520C170FB0096FF26 /* IconViewController.swift */,
+				4E6B6F9420D112C600C4F3D8 /* RegistrationOrLoginViewController.swift */,
+				4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */,
+				4E68E65320C16F860096FF26 /* AdViewController.swift */,
+			);
+			path = Gomi;
+			sourceTree = "<group>";
+		};
+		4EE8D8D120D7EB9700B27815 /* MatchingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4EE8D8D220D7EBF600B27815 /* MatchingDetailViewController.swift */,
+			);
+			path = MatchingDetail;
 			sourceTree = "<group>";
 		};
 		63D7E97516B769920953125A /* Frameworks */ = {
@@ -445,6 +450,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */,
+				4EE8D8D020D7EAC000B27815 /* MatchingListPresenter.swift in Sources */,
+				4EE8D8CE20D7D3DD00B27815 /* SHA256.swift in Sources */,
 				4E6B6F9720D1478700C4F3D8 /* LoginModel.swift in Sources */,
 				4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */,
 				4E68E65220C1627E0096FF26 /* DetailViewController.swift in Sources */,
@@ -458,7 +465,6 @@
 				4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */,
 				4E6B6F3120D0E6FC00C4F3D8 /* LoginInfomationModel.swift in Sources */,
 				4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */,
-				4E6B6F9320D103CE00C4F3D8 /* SHA256.swift in Sources */,
 				4E68DF9D20B580FD00CA4CB2 /* GetImageFromId.swift in Sources */,
 				4E88EE3520B2C21500E3FC92 /* MatchingListViewController.swift in Sources */,
 				4E6B6F2F20D0C14E00C4F3D8 /* MessageListTableViewCell.swift in Sources */,
@@ -468,6 +474,7 @@
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
+				4EE8D8D320D7EBF600B27815 /* MatchingDetailViewController.swift in Sources */,
 				4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */,
 				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,
@@ -625,6 +632,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "support.papa.papa-support-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/miamoto/Desktop/papa-support/papa-support/Others/BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -642,6 +650,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "support.papa.papa-support-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/miamoto/Desktop/papa-support/papa-support/Others/BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

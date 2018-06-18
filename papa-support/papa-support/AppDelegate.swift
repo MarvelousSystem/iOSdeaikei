@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let first = MainTabController()
             var myNavigationController: UINavigationController?
             myNavigationController = UINavigationController(rootViewController: first)
+            myNavigationController?.navigationBar.barTintColor = UIColor.white
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.rootViewController = myNavigationController
         }

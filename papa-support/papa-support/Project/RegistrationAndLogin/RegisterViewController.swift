@@ -110,6 +110,7 @@ class RegisterViewController: UIViewController {
         let first = MainTabController()
         var myNavigationController: UINavigationController?
         myNavigationController = UINavigationController(rootViewController: first)
+        myNavigationController?.navigationBar.barTintColor = UIColor.white
         present(myNavigationController!, animated: true, completion: nil)
     }
     // ニックネーム

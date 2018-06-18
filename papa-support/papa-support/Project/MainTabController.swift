@@ -1,5 +1,5 @@
-//  Created by MiyamotoSota on 2018/05/21.
-//  Copyright © 2018年 MiyamotoSota. All rights reserved.
+
+
 
 import UIKit
 
@@ -7,6 +7,9 @@ class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TabBarColor
+        self.tabBar.barTintColor = UIColor.white
         
         var viewControllers: [UIViewController] = []
         
@@ -27,7 +30,7 @@ class MainTabController: UITabBarController {
         let fifth = ProfileViewController()
         fifth.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.contacts, tag: 5)
         viewControllers.append(fifth)
-        
+        // Set
         self.setViewControllers(viewControllers, animated: false)
         
         // なぜか0だけだと選択されないので1にしてから0に
@@ -36,7 +39,6 @@ class MainTabController: UITabBarController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }
