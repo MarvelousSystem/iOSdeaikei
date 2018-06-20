@@ -13,6 +13,7 @@
 		4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31B20D27C2000689281 /* RegisterViewController.swift */; };
 		4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31D20D27C2B00689281 /* LoginViewController.swift */; };
 		4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */; };
+		4E68666020DA230600781162 /* MatchingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68665F20DA230600781162 /* MatchingDetailViewController.swift */; };
 		4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */; };
 		4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E3F20B8082400E68706 /* PersonDataStruct.swift */; };
 		4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E686E4120B80CE300E68706 /* ErrorSet.swift */; };
@@ -49,7 +50,7 @@
 		4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */; };
 		4EE8D8CE20D7D3DD00B27815 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */; };
 		4EE8D8D020D7EAC000B27815 /* MatchingListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */; };
-		4EE8D8D320D7EBF600B27815 /* MatchingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8D220D7EBF600B27815 /* MatchingDetailViewController.swift */; };
+		4EE8D8D320D7EBF600B27815 /* MatchingDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */; };
 		EAE8584471E2D37BA6987EAB /* Pods_papa_support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8769D2B1BC31394EC37ED0B /* Pods_papa_support.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		4E5DC31B20D27C2000689281 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4E5DC31D20D27C2B00689281 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSmsAuthentication.swift; sourceTree = "<group>"; };
+		4E68665F20DA230600781162 /* MatchingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDetailViewController.swift; sourceTree = "<group>"; };
 		4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDataFromId.swift; sourceTree = "<group>"; };
 		4E686E3F20B8082400E68706 /* PersonDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataStruct.swift; sourceTree = "<group>"; };
 		4E686E4120B80CE300E68706 /* ErrorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSet.swift; sourceTree = "<group>"; };
@@ -102,7 +104,7 @@
 		4EBBA25E20BE654F004AD6E9 /* papa-support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "papa-support.entitlements"; sourceTree = "<group>"; };
 		4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListPresenter.swift; sourceTree = "<group>"; };
-		4EE8D8D220D7EBF600B27815 /* MatchingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDetailViewController.swift; sourceTree = "<group>"; };
+		4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDetailPageViewController.swift; sourceTree = "<group>"; };
 		80406C9B43CB5535BA88C31A /* Pods-App01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App01.release.xcconfig"; path = "Pods/Target Support Files/Pods-App01/Pods-App01.release.xcconfig"; sourceTree = "<group>"; };
 		9DA6C8263BBC45A1B1A316D9 /* Pods-papa-support.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-papa-support.debug.xcconfig"; path = "Pods/Target Support Files/Pods-papa-support/Pods-papa-support.debug.xcconfig"; sourceTree = "<group>"; };
 		F03D33780A30F39683D28EEB /* Pods_App01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,7 +301,8 @@
 		4EE8D8D120D7EB9700B27815 /* MatchingDetail */ = {
 			isa = PBXGroup;
 			children = (
-				4EE8D8D220D7EBF600B27815 /* MatchingDetailViewController.swift */,
+				4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */,
+				4E68665F20DA230600781162 /* MatchingDetailViewController.swift */,
 			);
 			path = MatchingDetail;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */,
 				4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */,
 				4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */,
+				4E68666020DA230600781162 /* MatchingDetailViewController.swift in Sources */,
 				4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */,
 				4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */,
 				4E6B6F3120D0E6FC00C4F3D8 /* LoginInfomationModel.swift in Sources */,
@@ -474,7 +478,7 @@
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
-				4EE8D8D320D7EBF600B27815 /* MatchingDetailViewController.swift in Sources */,
+				4EE8D8D320D7EBF600B27815 /* MatchingDetailPageViewController.swift in Sources */,
 				4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */,
 				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,

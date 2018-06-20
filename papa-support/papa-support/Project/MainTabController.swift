@@ -7,7 +7,6 @@ class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // TabBarColor
         self.tabBar.barTintColor = UIColor.white
         

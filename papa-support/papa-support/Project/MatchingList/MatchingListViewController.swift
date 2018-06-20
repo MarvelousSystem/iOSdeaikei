@@ -70,8 +70,8 @@ extension MatchingListViewController: UICollectionViewDelegate {
     // When Item was Touched
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         MatchingListPresenter.indexPathRowOfCell = indexPath.row
-        let next = MatchingDetailViewController()
-        present(next, animated: true, completion: nil)
+        let next = MatchingDetailPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        self.navigationController?.pushViewController(next, animated: true)
     }
 
 }

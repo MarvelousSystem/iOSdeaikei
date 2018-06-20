@@ -1,23 +1,21 @@
-//
-//  MatchingDetail.swift
-//  papa-support
-//
-//  Created by Miamoto on 2018/06/18.
-//  Copyright © 2018年 MiyamotoSouta. All rights reserved.
-//
+
+
 
 import UIKit
 
 class MatchingDetailViewController: UIViewController {
-
+    // 前画面で選択されたCollectionCellのindexPath.row
     let indexPathRowOfCell = MatchingListPresenter.indexPathRowOfCell
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(indexPathRowOfCell)
+        print("MatchingDetailViewController:\(indexPathRowOfCell)")
+        if (indexPathRowOfCell % 2 == 1) {self.view.backgroundColor = UIColor.blue}
+        else {self.view.backgroundColor = UIColor.black}
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
 }
