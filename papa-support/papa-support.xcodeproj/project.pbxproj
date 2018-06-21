@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0A53C420DB89C9007B052D /* GetLoginInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A53C320DB89C9007B052D /* GetLoginInformation.swift */; };
+		4E1D0ED820DA58D80058057B /* MatchingListDetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D0ED720DA58D80058057B /* MatchingListDetailScrollView.swift */; };
+		4E1D0EDA20DA7CDB0058057B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E1D0ED920DA7CDB0058057B /* test.png */; };
 		4E5DC31420D26B3C00689281 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */; };
 		4E5DC31720D2728600689281 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31620D2728600689281 /* StartViewController.swift */; };
 		4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DC31920D2747200689281 /* UIColorHex.swift */; };
@@ -57,6 +60,9 @@
 /* Begin PBXFileReference section */
 		1DD2786C136139D9467F77A4 /* Pods-papa-support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-papa-support.release.xcconfig"; path = "Pods/Target Support Files/Pods-papa-support/Pods-papa-support.release.xcconfig"; sourceTree = "<group>"; };
 		3D4DC0637462E1EE60FBA068 /* Pods-App01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App01/Pods-App01.debug.xcconfig"; sourceTree = "<group>"; };
+		4E0A53C320DB89C9007B052D /* GetLoginInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLoginInformation.swift; sourceTree = "<group>"; };
+		4E1D0ED720DA58D80058057B /* MatchingListDetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListDetailScrollView.swift; sourceTree = "<group>"; };
+		4E1D0ED920DA7CDB0058057B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		4E5DC31320D26B3C00689281 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4E5DC31620D2728600689281 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		4E5DC31920D2747200689281 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		4E68DF9520B5669500CA4CB2 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
+				4E1D0ED920DA7CDB0058057B /* test.png */,
 				4E68DF9E20B5869500CA4CB2 /* sozai_20150329_chuui.jpg */,
 				4E686E4320B80CFD00E68706 /* 0I9A6766ISUMI_TP_V.jpg */,
 			);
@@ -168,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */,
+				4E0A53C320DB89C9007B052D /* GetLoginInformation.swift */,
 				4E786A4020D79B2300D50A46 /* GetCSRF.swift */,
 				4E786A4220D79B6500D50A46 /* GetJSON.swift */,
 				4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */,
@@ -303,6 +311,7 @@
 			children = (
 				4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */,
 				4E68665F20DA230600781162 /* MatchingDetailViewController.swift */,
+				4E1D0ED720DA58D80058057B /* MatchingListDetailScrollView.swift */,
 			);
 			path = MatchingDetail;
 			sourceTree = "<group>";
@@ -395,6 +404,7 @@
 			files = (
 				4E686E4420B80CFD00E68706 /* 0I9A6766ISUMI_TP_V.jpg in Resources */,
 				4E68DF9F20B5869500CA4CB2 /* sozai_20150329_chuui.jpg in Resources */,
+				4E1D0EDA20DA7CDB0058057B /* test.png in Resources */,
 				4E9B645420CE5DBC003C75B1 /* GoogleService-Info.plist in Resources */,
 				4E88EE2820B2BAB000E3FC92 /* LaunchScreen.storyboard in Resources */,
 				4E9B645320CE5DA1003C75B1 /* Base.lproj in Resources */,
@@ -487,8 +497,10 @@
 				4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */,
 				4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */,
 				4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */,
+				4E0A53C420DB89C9007B052D /* GetLoginInformation.swift in Sources */,
 				4E68E65420C16F860096FF26 /* AdViewController.swift in Sources */,
 				4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */,
+				4E1D0ED820DA58D80058057B /* MatchingListDetailScrollView.swift in Sources */,
 				4E5DC31420D26B3C00689281 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

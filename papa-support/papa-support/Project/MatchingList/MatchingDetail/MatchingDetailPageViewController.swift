@@ -5,21 +5,21 @@ import UIKit
 
 class MatchingDetailPageViewController: UIPageViewController {
     
-    let scrollView: UIScrollView = UIScrollView()
     let firstView: UIViewController = MatchingDetailViewController()
     // 前画面で選択されたCollectionCellのindexPath.row
     var indexPathRowOfCell = MatchingListPresenter.indexPathRowOfCell
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = String(indexPathRowOfCell)
         self.delegate = self
         self.dataSource = self
         self.view.backgroundColor = UIColor.white
         self.setViewControllers([getFirst(index: self.indexPathRowOfCell)], direction: .forward, animated: false, completion: nil)
         print("MatchingDetailPageViewController:\(indexPathRowOfCell)")
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidAppear(_ animated: Bool) {
+        self.title = String(indexPathRowOfCell)
     }
     // firstViewController
     func getFirst(index: Int) -> (UIViewController) {
@@ -28,9 +28,6 @@ class MatchingDetailPageViewController: UIPageViewController {
         let firstView: UIViewController = MatchingDetailViewController()
         return firstView
     }
-    func setScrollView() {
-        self.scrollView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height - (self.navigationController?.navigationBar.bounds.height)! * 2)
-    }
 }
 
 // MARK: UIPageViewControllerDelegate and DataSource
@@ -38,19 +35,19 @@ extension MatchingDetailPageViewController: UIPageViewControllerDelegate, UIPage
     
     // left
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if (indexPathRowOfCell <= 1) {return nil}
+        if (indexPathRowOfCell <= 0) {return nil}
         else {return getNext(index: indexPathRowOfCell - 1)}
     }
     // right
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if (indexPathRowOfCell <= 1) {return nil}
+        if (indexPathRowOfCell < 0) {return nil}
         else {return getNext(index: indexPathRowOfCell + 1)}
     }
     // NextViewController
     func getNext(index: Int) -> (UIViewController) {
-        // indexPathを保存
         indexPathRowOfCell = index // <- indexPathRowOfCellに通知
         MatchingListPresenter.indexPathRowOfCell = indexPathRowOfCell // <- Presenterに通知
+        self.title = String(indexPathRowOfCell) // <- titleを変更
         let nextView: UIViewController = MatchingDetailViewController()
         return nextView
     }
