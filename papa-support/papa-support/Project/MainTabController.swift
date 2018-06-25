@@ -13,22 +13,32 @@ class MainTabController: UITabBarController {
         var viewControllers: [UIViewController] = []
         
         let first = MatchingListViewController()
-        first.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostRecent, tag: 1)
-        viewControllers.append(first)
+        var firstNavigation: UINavigationController?
+        firstNavigation = UINavigationController(rootViewController: first)
+        firstNavigation?.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.mostRecent, tag: 1)
+        viewControllers.append(firstNavigation!)
+        
         let second = LikedViewController()
-        second.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostViewed, tag: 2)
-        viewControllers.append(second)
+        var secondNavigation: UINavigationController?
+        secondNavigation = UINavigationController(rootViewController: second)
+        secondNavigation?.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.mostViewed, tag: 2)
+        viewControllers.append(secondNavigation!)
+        
         let third = MessageListViewController()
-        third.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.contacts, tag: 3)
-        viewControllers.append(third)
+        var thirdNavigation: UINavigationController?
+        thirdNavigation = UINavigationController(rootViewController: third)
+        thirdNavigation?.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.contacts, tag: 3)
+        viewControllers.append(thirdNavigation!)
         /*
         let fourth = ScheduleViewController()
         fourth.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostViewed, tag: 4)
         viewControllers.append(fourth)
         */
         let fifth = ProfileViewController()
-        fifth.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.contacts, tag: 5)
-        viewControllers.append(fifth)
+        var fifthNavigation: UINavigationController?
+        fifthNavigation = UINavigationController(rootViewController: fifth)
+        fifthNavigation?.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarItem.SystemItem.contacts, tag: 5)
+        viewControllers.append(fifthNavigation!)
         // Set
         self.setViewControllers(viewControllers, animated: false)
         

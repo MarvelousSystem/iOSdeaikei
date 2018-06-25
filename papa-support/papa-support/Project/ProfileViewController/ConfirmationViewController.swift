@@ -29,9 +29,9 @@ class ConfirmationViewController: UIViewController {
     func setButton() {
         let button: UIButton!
         button = UIButton(frame: CGRect(x: 0, y: DeviceSize.screenHeight - DeviceSize.tabBarHeight, width: DeviceSize.screenWidth, height: DeviceSize.tabBarHeight))
-        button.setTitleColor(UIColor.black , for: UIControlState.normal)
-        button.setTitle("本人確認をする", for: UIControlState.normal)
-        button.addTarget(self, action: #selector(self.tapped), for: .touchUpInside)
+        button.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        button.setTitle("本人確認をする", for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(self.tapped), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button)
     }
     @objc func tapped() {

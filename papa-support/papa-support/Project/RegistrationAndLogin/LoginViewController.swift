@@ -53,12 +53,12 @@ class LoginViewController: UIViewController {
         let sendLoginInformationButtonButton: UIButton = UIButton()
         sendLoginInformationButtonButton.backgroundColor = UIColor(hex: "f08080")
         sendLoginInformationButtonButton.frame = CGRect(x: const / 2, y: Double(self.view.bounds.height) - DeviceSize.tabBarHeight - const, width: Double(self.view.bounds.width) - const, height: DeviceSize.tabBarHeight)
-        sendLoginInformationButtonButton.setTitle("ログインする", for: UIControlState.normal)
-        sendLoginInformationButtonButton.setTitleColor(UIColor.white , for: UIControlState.normal)
+        sendLoginInformationButtonButton.setTitle("ログインする", for: UIControl.State.normal)
+        sendLoginInformationButtonButton.setTitleColor(UIColor.white , for: UIControl.State.normal)
         sendLoginInformationButtonButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         sendLoginInformationButtonButton.layer.cornerRadius = 22
-        sendLoginInformationButtonButton.addTarget(self, action: #selector(self.tappedSendLoginInformationButton), for: .touchUpInside)
-        sendLoginInformationButtonButton.setTitleColor(UIColor.gray, for: .highlighted)
+        sendLoginInformationButtonButton.addTarget(self, action: #selector(self.tappedSendLoginInformationButton), for: UIControl.Event.touchUpInside)
+        sendLoginInformationButtonButton.setTitleColor(UIColor.gray, for: UIControl.State.highlighted)
         self.view.addSubview(sendLoginInformationButtonButton)
     }
     @objc func tappedSendLoginInformationButton() {
