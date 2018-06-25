@@ -15,7 +15,7 @@ class MessageListTableViewCell: UITableViewCell {
     var detail: UILabel!
     var matchingDate: UILabel!
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String!) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.makeUI()
     }

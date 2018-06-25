@@ -83,12 +83,12 @@ class RegisterViewController: UIViewController {
         let sendButton: UIButton = UIButton()
         sendButton.backgroundColor = UIColor(hex: "7fffd4")
         sendButton.frame = CGRect(x: const / 2, y: Double(self.view.bounds.height) - DeviceSize.tabBarHeight - const, width: Double(self.view.bounds.width) - const, height: DeviceSize.tabBarHeight)
-        sendButton.setTitle("今すぐパパサポをはじめる", for: UIControl.State.normal)
-        sendButton.setTitleColor(UIColor.white , for: UIControl.State.normal)
+        sendButton.setTitle("今すぐパパサポをはじめる", for: UIControlState.normal)
+        sendButton.setTitleColor(UIColor.white , for: UIControlState.normal)
         sendButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         sendButton.layer.cornerRadius = 22
-        sendButton.addTarget(self, action: #selector(self.tappedSendButton), for: UIControl.Event.touchUpInside)
-        sendButton.setTitleColor(UIColor.gray, for: UIControl.State.highlighted)
+        sendButton.addTarget(self, action: #selector(self.tappedSendButton), for: .touchUpInside)
+        sendButton.setTitleColor(UIColor.gray, for: .highlighted)
         self.view.addSubview(sendButton)
     }
     // 登録情報送信ボタンが押されたとき
@@ -108,10 +108,10 @@ class RegisterViewController: UIViewController {
         
         // 画面遷移
         let first = MainTabController()
-        //var myNavigationController: UINavigationController?
-        //myNavigationController = UINavigationController(rootViewController: first)
-        //myNavigationController?.navigationBar.barTintColor = UIColor.white
-        present(first, animated: true, completion: nil)
+        var myNavigationController: UINavigationController?
+        myNavigationController = UINavigationController(rootViewController: first)
+        myNavigationController?.navigationBar.barTintColor = UIColor.white
+        present(myNavigationController!, animated: true, completion: nil)
     }
     // ニックネーム
     func nickname() {
@@ -179,14 +179,14 @@ class RegisterViewController: UIViewController {
         scrollView.addSubview(birthDateLabel)
         scrollView.addSubview(birthDateTextField)
         // DatePickerの設定
-        inputDatePicker.datePickerMode = UIDatePicker.Mode.date
+        inputDatePicker.datePickerMode = UIDatePickerMode.date
         inputDatePicker.backgroundColor = UIColor.white
         birthDateTextField.inputView = inputDatePicker //<- セット
         // キーボードに表示するツールバーの表示
         let pickerToolBar = UIToolbar(frame: CGRect(x: 0, y: self.view.bounds.height - inputDatePicker.bounds.height - 40, width: self.view.bounds.width, height: 40))
         pickerToolBar.tintColor = UIColor.white
         pickerToolBar.backgroundColor = UIColor.white
-        let spaceBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: Selector(("spaceBarButtonPush"))) //<- 何もないボタン
+        let spaceBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: Selector(("spaceBarButtonPush"))) //<- 何もないボタン
         let toolBarButton = UIBarButtonItem(title: "完了", style: .done, target: self, action: #selector(RegisterViewController.toolBarButtonPush)) //<- 完了ボタン
         toolBarButton.tintColor = UIColor.blue
         pickerToolBar.items = [spaceBarButton, toolBarButton]

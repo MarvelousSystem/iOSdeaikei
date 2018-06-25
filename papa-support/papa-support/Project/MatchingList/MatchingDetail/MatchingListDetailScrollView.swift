@@ -29,7 +29,7 @@ class MatchingListDetailScrollView: UIScrollView {
         firstImageView.backgroundColor = UIColor.white
         firstImageView.image = firstImage
         firstImageView.frame = CGRect(x: UIScreen.main.bounds.width * 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
-        firstImageView.contentMode = UIView.ContentMode.scaleAspectFit
+        firstImageView.contentMode = UIViewContentMode.scaleAspectFit
         // commentLabel
         comment1Label.frame = CGRect(x: 0, y: firstImageView.bounds.height / 8 * 7, width: firstImageView.bounds.width, height: firstImageView.bounds.height / 8 / 2)
         comment1Label.textColor = UIColor.white
