@@ -31,7 +31,6 @@ class MatchingDetailViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.comment1Label.text = "　テスト　テスト歳　テスト県"
         self.scrollView.comment2Label.text = "　これはテストです"
         self.view.addSubview(scrollView)
-        
     }
     
     // buttonView
@@ -44,19 +43,19 @@ class MatchingDetailViewController: UIViewController, UIScrollViewDelegate {
         // button
         let likeButton: UIButton = UIButton(frame: CGRect(x: 0 + const, y: const + self.view.bounds.height - buttonView.bounds.height, width: buttonView.bounds.width / 4 * 3 - const * 1, height: buttonView.bounds.height - const * 2))
         likeButton.backgroundColor = UIColor(hex: "7fffd4")
-        likeButton.setTitle("ログイン", for: UIControlState.normal)
-        likeButton.setTitleColor(UIColor.white , for: UIControlState.normal)
+        likeButton.setTitle("ログイン", for: UIControl.State.normal)
+        likeButton.setTitleColor(UIColor.white , for: UIControl.State.normal)
         likeButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         likeButton.layer.cornerRadius = 5
-        likeButton.addTarget(self, action: #selector(self.tapped), for: UIControlEvents.touchUpInside)
+        likeButton.addTarget(self, action: #selector(self.tapped), for: UIControl.Event.touchUpInside)
         self.view.addSubview(likeButton)
         // button
         let messageButton: UIButton = UIButton(frame: CGRect(x: const + buttonView.bounds.width / 4 * 3, y: self.view.bounds.height - buttonView.bounds.height + const, width: buttonView.bounds.width / 4 * 1 - const * 2, height: buttonView.bounds.height - const * 2))
         messageButton.backgroundColor = UIColor(hex: "7fffd4")
-        messageButton.setTitleColor(UIColor.white , for: UIControlState.normal)
+        messageButton.setTitleColor(UIColor.white , for: UIControl.State.normal)
         messageButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         messageButton.layer.cornerRadius = 5
-        messageButton.addTarget(self, action: #selector(self.tapped), for: UIControlEvents.touchUpInside)
+        messageButton.addTarget(self, action: #selector(self.tapped), for: UIControl.Event.touchUpInside)
         self.view.addSubview(messageButton)
     }
     @objc func tapped() {

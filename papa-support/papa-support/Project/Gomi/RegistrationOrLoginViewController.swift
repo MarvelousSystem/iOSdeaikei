@@ -39,7 +39,7 @@ class RegistrationOrLoginViewController: UIViewController {
         let const = self.view.bounds.width
         let const_2 = self.view.bounds.height
         telTextField = UITextField(frame: CGRect(x: const / 4, y: const_2 / 6, width: const / 2, height: 30))
-        telTextField.borderStyle = UITextBorderStyle.roundedRect
+        telTextField.borderStyle = UITextField.BorderStyle.roundedRect
         self.view.addSubview(telTextField)
     }
     // パスワードの入力画面
@@ -47,7 +47,7 @@ class RegistrationOrLoginViewController: UIViewController {
         let const = self.view.bounds.width
         let const_2 = self.view.bounds.height
         passwordTextField = UITextField(frame: CGRect(x: const / 4, y: const_2 / 6 * 2, width: const / 2, height: 30))
-        passwordTextField.borderStyle = UITextBorderStyle.roundedRect
+        passwordTextField.borderStyle = UITextField.BorderStyle.roundedRect
         passwordTextField.isSecureTextEntry = true
         self.view.addSubview(passwordTextField)
     }
@@ -56,9 +56,9 @@ class RegistrationOrLoginViewController: UIViewController {
         let button_1: UIButton = UIButton()
         button_1.backgroundColor = UIColor.white
         button_1.frame = CGRect(x: 0, y: Double(self.view.bounds.height) - DeviceSize.tabBarHeight, width: Double(self.view.bounds.width), height: DeviceSize.tabBarHeight)
-        button_1.setTitle("ログイン", for: UIControlState.normal)
-        button_1.setTitleColor(UIColor.black , for: UIControlState.normal)
-        button_1.addTarget(self, action: #selector(self.tapped), for: .touchUpInside)
+        button_1.setTitle("ログイン", for: UIControl.State.normal)
+        button_1.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        button_1.addTarget(self, action: #selector(self.tapped), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button_1)
     }
     // 会員登録ボタン
@@ -66,9 +66,9 @@ class RegistrationOrLoginViewController: UIViewController {
         let button_2: UIButton = UIButton()
         button_2.backgroundColor = UIColor.white
         button_2.frame = CGRect(x: (DeviceSize.screenWidth - Double(self.view.bounds.width) / 4 * 3) / 2, y: Double(self.view.bounds.height) - DeviceSize.tabBarHeight * 8, width: Double(self.view.bounds.width) / 4 * 3, height: DeviceSize.tabBarHeight)
-        button_2.setTitle("会員登録", for: UIControlState.normal)
-        button_2.setTitleColor(UIColor.black , for: UIControlState.normal)
-        button_2.addTarget(self, action: #selector(self.tapped_2), for: .touchUpInside)
+        button_2.setTitle("会員登録", for: UIControl.State.normal)
+        button_2.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        button_2.addTarget(self, action: #selector(self.tapped_2), for: UIControl.Event.touchUpInside)
         self.view.addSubview(button_2)
     }
     // ボタンがタップされたとき

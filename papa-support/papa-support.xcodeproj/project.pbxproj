@@ -36,6 +36,7 @@
 		4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */; };
 		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
 		4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */; };
+		4E77EC5E20E0F0070067130E /* MatchingSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77EC5D20E0F0070067130E /* MatchingSearchViewController.swift */; };
 		4E786A4120D79B2300D50A46 /* GetCSRF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4020D79B2300D50A46 /* GetCSRF.swift */; };
 		4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4220D79B6500D50A46 /* GetJSON.swift */; };
 		4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */; };
@@ -90,6 +91,7 @@
 		4E6F25CC20BBA6290023730B /* LikedFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFromViewController.swift; sourceTree = "<group>"; };
 		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
 		4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E77EC5D20E0F0070067130E /* MatchingSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingSearchViewController.swift; sourceTree = "<group>"; };
 		4E786A4020D79B2300D50A46 /* GetCSRF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCSRF.swift; sourceTree = "<group>"; };
 		4E786A4220D79B6500D50A46 /* GetJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJSON.swift; sourceTree = "<group>"; };
 		4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -198,11 +200,20 @@
 			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
+		4E77EC5C20E0EF9D0067130E /* MatchingSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4E77EC5D20E0F0070067130E /* MatchingSearchViewController.swift */,
+			);
+			path = MatchingSearch;
+			sourceTree = "<group>";
+		};
 		4E7A458320C541CF0061CD5C /* MatchingList */ = {
 			isa = PBXGroup;
 			children = (
 				4E88EE3420B2C21500E3FC92 /* MatchingListViewController.swift */,
 				4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */,
+				4E77EC5C20E0EF9D0067130E /* MatchingSearch */,
 				4EE8D8D120D7EB9700B27815 /* MatchingDetail */,
 			);
 			path = MatchingList;
@@ -370,6 +381,7 @@
 				TargetAttributes = {
 					4E88EE1920B2BAB000E3FC92 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -490,6 +502,7 @@
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
 				4EE8D8D320D7EBF600B27815 /* MatchingDetailPageViewController.swift in Sources */,
 				4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */,
+				4E77EC5E20E0F0070067130E /* MatchingSearchViewController.swift in Sources */,
 				4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */,
 				4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */,
 				4E68DF9320B5336700CA4CB2 /* DeviceSize.swift in Sources */,
@@ -576,6 +589,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/JSRunner.bundle/Contents/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -628,6 +642,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/JSRunner.bundle/Contents/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)/BridgingHeader.h";
@@ -649,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "support.papa.papa-support-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/miamoto/Desktop/papa-support/papa-support/Others/BridgingHeader.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -667,7 +682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "support.papa.papa-support-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/miamoto/Desktop/papa-support/papa-support/Others/BridgingHeader.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -31,7 +31,7 @@ class RegistrationViewController: UIViewController {
         let const = self.view.bounds.width
         let const_2 = self.view.bounds.height
         telTextField = UITextField(frame: CGRect(x: const / 4, y: const_2 / 6, width: const / 2, height: 30))
-        telTextField.borderStyle = UITextBorderStyle.roundedRect
+        telTextField.borderStyle = UITextField.BorderStyle.roundedRect
         self.view.addSubview(telTextField)
     }
 }

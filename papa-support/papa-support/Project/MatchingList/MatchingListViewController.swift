@@ -27,10 +27,8 @@ class MatchingListViewController: UIViewController {
         view.addSubview(collectionView)
         self.view.backgroundColor = UIColor.white
         // Navigationbar
-        //let myBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.action, target: self, action: #selector(onClickMyBarButton))
-        //self.navigationItem.leftBarButtonItem = myBarButton
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(clickLeftButton))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(clickRightButton))
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = "パパ活"
@@ -39,7 +37,12 @@ class MatchingListViewController: UIViewController {
         navigationController?.navigationBar.topItem!.title = " "
     }
     // TappedEvent
-    @objc func addTapped(){
+    @objc func clickLeftButton(){
+        let next = MatchingSearchViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    @objc func clickRightButton(){
         print("onClickMyBarButton:")
     }
     
@@ -71,6 +74,7 @@ extension MatchingListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         MatchingListPresenter.indexPathRowOfCell = indexPath.row
         let next = MatchingDetailPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        next.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(next, animated: true)
     }
 

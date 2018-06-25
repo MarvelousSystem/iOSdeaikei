@@ -58,9 +58,9 @@ class LikedViewController: UIViewController {
         likeToViewController.view.frame = containerView.bounds
         self.pageControllers.append(likeToViewController)
         // Containerの設定
-        addChildViewController(pageControllers[0])
+        addChild(pageControllers[0])
         containerView.addSubview(pageControllers[0].view)
-        pageControllers[0].didMove(toParentViewController: self)
+        pageControllers[0].didMove(toParent: self)
         childViewController = pageControllers[0]
         // Add
         view.addSubview(containerView)
