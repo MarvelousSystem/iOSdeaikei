@@ -1,22 +1,42 @@
-
+// 参考: https://qiita.com/ShinokiRyosei/items/06fb30983236d6342b28
 
 
 import UIKit
 
+// MARK: vars and lifecycle
 class MatchingDatailDMViewController: UIViewController {
     // vars
+    var outsideView: UIView!
     var textView: UITextView!
-    
+    let SCREEN_SIZE = UIScreen.main.bounds.size
+    var isOpen = false // キーボードが表示されているかの判定
+    var height: CGFloat! // キーボードの高さ
+    // viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         setOutsideView()
         setMessageView()
         setIconImageView()
+        setReturnButton()
         self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
     }
+    // viewWillAppear
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.configureObserver()
+    }
+    // viewWillDisappear
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.removeObserver() // Notificationを画面が消えるときに削除
+    }
+}
+
+// MARK: -UI
+extension MatchingDatailDMViewController {
     // outsideView
     func setOutsideView() {
-        let outsideView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(DeviceSize.screenWidth), height: CGFloat(DeviceSize.screenHeight)))
+        outsideView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(DeviceSize.screenWidth), height: CGFloat(DeviceSize.screenHeight)))
         // event
         let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,
@@ -44,13 +64,7 @@ class MatchingDatailDMViewController: UIViewController {
         textView.layer.borderColor = UIColor.black.cgColor
         textView.text = "お相手しての共通点や気になったことを伝えてみましょう！（メッセージ付いいね！ではポイントが消費されます。また他SNSなどあなたを特定できる個人情報は送信できません）"
         textView.textColor = UIColor.lightGray
-        //textView.placeholder = "お相手しての共通点や気になったことを伝えてみましょう！（メッセージ付いいね！ではポイントが消費されます。また他SNSなどあなたを特定できる個人情報は送信できません）" //プレースホルダの設定
         textView.font = UIFont.systemFont(ofSize: 14) //フォントサイズの指定
-        //textField.borderStyle = UITextField.BorderStyleUITextField.BorderStyle.Line //線の枠線
-        //textView.borderStyle = UITextField.BorderStyle.bezel //立体的な枠線
-        //textView.borderStyle = UITextField.BorderStyle.roundedRect //角丸
-        //textView.adjustsFontSizeToFitWidth = true
-        //textView.minimumFontSize = 0;
         textView.delegate = self
         messageView.addSubview(textView)
         // button
@@ -86,6 +100,39 @@ class MatchingDatailDMViewController: UIViewController {
         self.view.addSubview(iconImageView)
     }
 }
+
+// MARK: -NotificationCenter
+extension MatchingDatailDMViewController {
+    // Notificationを設定
+    func configureObserver() {
+        let notification = NotificationCenter.default
+        notification.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        notification.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    // Notificationを削除
+    func removeObserver() {
+        let notification = NotificationCenter.default
+        notification.removeObserver(self)
+    }
+    // キーボードが現れた時に、画面全体をずらす。
+    @objc func keyboardWillShow(notification: Notification?) {
+        let rect = (notification?.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
+        let duration: TimeInterval? = notification?.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double
+        UIView.animate(withDuration: duration!, animations: { () in
+            let transform = CGAffineTransform(translationX: 0, y: -(rect?.size.height)!)
+            self.view.transform = transform
+        })
+    }
+    // キーボードが消えたときに、画面を戻す
+    @objc func keyboardWillHide(notification: Notification?) {
+        let duration: TimeInterval? = notification?.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Double
+        UIView.animate(withDuration: duration!, animations: { () in
+            self.view.transform = CGAffineTransform.identity
+        })
+    }
+}
+
+// MARK: -UITextViewDelegate
 extension MatchingDatailDMViewController: UITextViewDelegate{
     func textViewDidBeginEditing(_ textView: UITextView) {
         print("反応")
@@ -99,5 +146,25 @@ extension MatchingDatailDMViewController: UITextViewDelegate{
             textView.text = "お相手しての共通点や気になったことを伝えてみましょう！（メッセージ付いいね！ではポイントが消費されます。また他SNSなどあなたを特定できる個人情報は送信できません）"
             textView.textColor = UIColor.lightGray
         }
+    }
+    func textViewShouldReturn(_ textField: UITextField) -> Bool {
+        // キーボードを閉じる
+        textView.resignFirstResponder()
+        return true
+    }
+    func setReturnButton() {
+        // 仮のサイズでツールバー生成
+        let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        kbToolBar.barStyle = UIBarStyle.default  // スタイルを設定
+        kbToolBar.sizeToFit()  // 画面幅に合わせてサイズを変更
+        // スペーサー
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+        // 閉じるボタン
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(commitButtonTapped))
+        kbToolBar.items = [spacer, commitButton]
+        textView.inputAccessoryView = kbToolBar
+    }
+    @objc func commitButtonTapped (){
+        self.view.endEditing(true)
     }
 }
