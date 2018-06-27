@@ -43,13 +43,18 @@ class MatchingListViewController: UIViewController {
         self.navigationController?.pushViewController(next, animated: true)
     }
     @objc func clickRightButton(){
-        print("onClickMyBarButton:")
+        let next = MatchingAppointmentSoonViewController()
+        next.modalPresentationStyle = .overCurrentContext
+        self.present(next, animated: true, completion: {
+        })
+        //present(next, animated: true, completion: nil)
+        //self.hidesBottomBarWhenPushed = true
+        //self.navigationController?.pushViewController(next, animated: true)
+        //self.hidesBottomBarWhenPushed = false
     }
-    
 }
 // MARK: -UICollectionViewDataSource
 extension MatchingListViewController: UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -65,11 +70,9 @@ extension MatchingListViewController: UICollectionViewDataSource {
         //let index = indexPath.section
         return cell
     }
-    
 }
 // MARK: -UICollectionViewDelegate
 extension MatchingListViewController: UICollectionViewDelegate {
-    
     // When Item was Touched
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         MatchingListPresenter.indexPathRowOfCell = indexPath.row
@@ -77,5 +80,4 @@ extension MatchingListViewController: UICollectionViewDelegate {
         next.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(next, animated: true)
     }
-
 }

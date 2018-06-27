@@ -37,6 +37,7 @@
 		4E6F25CF20BBA6430023730B /* LikeToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25CE20BBA6430023730B /* LikeToViewController.swift */; };
 		4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */; };
 		4E77EC5E20E0F0070067130E /* MatchingSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77EC5D20E0F0070067130E /* MatchingSearchViewController.swift */; };
+		4E77EC6120E0FCDF0067130E /* MatchingAppointmentSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77EC6020E0FCDF0067130E /* MatchingAppointmentSoonViewController.swift */; };
 		4E786A4120D79B2300D50A46 /* GetCSRF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4020D79B2300D50A46 /* GetCSRF.swift */; };
 		4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4220D79B6500D50A46 /* GetJSON.swift */; };
 		4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */; };
@@ -49,6 +50,9 @@
 		4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE3820B2C24000E3FC92 /* MessageListViewController.swift */; };
 		4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */; };
 		4E88EE3D20B2F12E00E3FC92 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */; };
+		4E8B341720E3525C00C021BA /* DSC01831-680x451.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B341620E3525C00C021BA /* DSC01831-680x451.jpg */; };
+		4E8B341920E355D900C021BA /* c2015419-111-e1429434329480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B341820E355D900C021BA /* c2015419-111-e1429434329480.jpg */; };
+		4E8B341B20E3663B00C021BA /* MatchingDatailDMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B341A20E3663B00C021BA /* MatchingDatailDMViewController.swift */; };
 		4E9B645320CE5DA1003C75B1 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B645220CE5DA1003C75B1 /* Base.lproj */; };
 		4E9B645420CE5DBC003C75B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B645620CE5DBC003C75B1 /* GoogleService-Info.plist */; };
 		4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */; };
@@ -92,6 +96,7 @@
 		4E6F25CE20BBA6430023730B /* LikeToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeToViewController.swift; sourceTree = "<group>"; };
 		4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E77EC5D20E0F0070067130E /* MatchingSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingSearchViewController.swift; sourceTree = "<group>"; };
+		4E77EC6020E0FCDF0067130E /* MatchingAppointmentSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingAppointmentSoonViewController.swift; sourceTree = "<group>"; };
 		4E786A4020D79B2300D50A46 /* GetCSRF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCSRF.swift; sourceTree = "<group>"; };
 		4E786A4220D79B6500D50A46 /* GetJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJSON.swift; sourceTree = "<group>"; };
 		4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 		4E88EE3820B2C24000E3FC92 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4E88EE3C20B2F12E00E3FC92 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		4E8B341620E3525C00C021BA /* DSC01831-680x451.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DSC01831-680x451.jpg"; sourceTree = "<group>"; };
+		4E8B341820E355D900C021BA /* c2015419-111-e1429434329480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "c2015419-111-e1429434329480.jpg"; sourceTree = "<group>"; };
+		4E8B341A20E3663B00C021BA /* MatchingDatailDMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDatailDMViewController.swift; sourceTree = "<group>"; };
 		4E9B645220CE5DA1003C75B1 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		4E9B645520CE5DBC003C75B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -166,8 +174,10 @@
 		4E68DF9520B5669500CA4CB2 /* Materials */ = {
 			isa = PBXGroup;
 			children = (
+				4E8B341820E355D900C021BA /* c2015419-111-e1429434329480.jpg */,
 				4E1D0ED920DA7CDB0058057B /* test.png */,
 				4E68DF9E20B5869500CA4CB2 /* sozai_20150329_chuui.jpg */,
+				4E8B341620E3525C00C021BA /* DSC01831-680x451.jpg */,
 				4E686E4320B80CFD00E68706 /* 0I9A6766ISUMI_TP_V.jpg */,
 			);
 			path = Materials;
@@ -208,12 +218,21 @@
 			path = MatchingSearch;
 			sourceTree = "<group>";
 		};
+		4E77EC5F20E0FC590067130E /* MatchingAppointmentSoon */ = {
+			isa = PBXGroup;
+			children = (
+				4E77EC6020E0FCDF0067130E /* MatchingAppointmentSoonViewController.swift */,
+			);
+			path = MatchingAppointmentSoon;
+			sourceTree = "<group>";
+		};
 		4E7A458320C541CF0061CD5C /* MatchingList */ = {
 			isa = PBXGroup;
 			children = (
 				4E88EE3420B2C21500E3FC92 /* MatchingListViewController.swift */,
 				4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */,
 				4E77EC5C20E0EF9D0067130E /* MatchingSearch */,
+				4E77EC5F20E0FC590067130E /* MatchingAppointmentSoon */,
 				4EE8D8D120D7EB9700B27815 /* MatchingDetail */,
 			);
 			path = MatchingList;
@@ -287,6 +306,14 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
+		4E8B341C20E3712B00C021BA /* MatchingDatailDM */ = {
+			isa = PBXGroup;
+			children = (
+				4E8B341A20E3663B00C021BA /* MatchingDatailDMViewController.swift */,
+			);
+			path = MatchingDatailDM;
+			sourceTree = "<group>";
+		};
 		4EBBA25620BE4196004AD6E9 /* LikedView */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +350,7 @@
 				4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */,
 				4E68665F20DA230600781162 /* MatchingDetailViewController.swift */,
 				4E1D0ED720DA58D80058057B /* MatchingListDetailScrollView.swift */,
+				4E8B341C20E3712B00C021BA /* MatchingDatailDM */,
 			);
 			path = MatchingDetail;
 			sourceTree = "<group>";
@@ -420,7 +448,9 @@
 				4E9B645420CE5DBC003C75B1 /* GoogleService-Info.plist in Resources */,
 				4E88EE2820B2BAB000E3FC92 /* LaunchScreen.storyboard in Resources */,
 				4E9B645320CE5DA1003C75B1 /* Base.lproj in Resources */,
+				4E8B341920E355D900C021BA /* c2015419-111-e1429434329480.jpg in Resources */,
 				4E88EE2520B2BAB000E3FC92 /* Assets.xcassets in Resources */,
+				4E8B341720E3525C00C021BA /* DSC01831-680x451.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +513,7 @@
 				4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */,
 				4E5DC31720D2728600689281 /* StartViewController.swift in Sources */,
 				4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */,
+				4E8B341B20E3663B00C021BA /* MatchingDatailDMViewController.swift in Sources */,
 				4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */,
 				4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */,
 				4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */,
@@ -500,6 +531,7 @@
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
+				4E77EC6120E0FCDF0067130E /* MatchingAppointmentSoonViewController.swift in Sources */,
 				4EE8D8D320D7EBF600B27815 /* MatchingDetailPageViewController.swift in Sources */,
 				4E6B6F9520D112C600C4F3D8 /* RegistrationOrLoginViewController.swift in Sources */,
 				4E77EC5E20E0F0070067130E /* MatchingSearchViewController.swift in Sources */,

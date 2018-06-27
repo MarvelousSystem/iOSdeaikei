@@ -29,11 +29,24 @@ class ProfileViewController: UIViewController {
         var backgroundImageView: UIImageView!
         var iconImageView: UIImageView!
         backgroundImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: DeviceSize.screenWidth, height: DeviceSize.screenHeight / 4 + DeviceSize.statusBarHeight))
-        backgroundImageView.backgroundColor = UIColor.blue
-        iconImageView = UIImageView(frame: CGRect(x: DeviceSize.screenWidth / 2 - DeviceSize.screenHeight / 4 / 3 / 2, y: DeviceSize.screenHeight / 4 / 3, width: DeviceSize.screenHeight / 4 / 3, height: DeviceSize.screenHeight / 4 / 3))
+        backgroundImageView.backgroundColor = UIColor(patternImage: UIImage(named: "DSC01831-680x451.jpg")!)
+        iconImageView = UIImageView(frame: CGRect(x: DeviceSize.screenWidth / 2 - DeviceSize.screenHeight / 4 / 2.5 / 2, y: DeviceSize.screenHeight / 4 / 2 - DeviceSize.screenHeight / 4 / 2.5 / 2, width: DeviceSize.screenHeight / 4 / 2.5, height: DeviceSize.screenHeight / 4 / 2.5))
         iconImageView.backgroundColor = UIColor.white
+        // icon
+        iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
+        iconImageView.clipsToBounds = true
+        iconImageView.layer.borderColor = UIColor.white.cgColor
+        iconImageView.layer.borderWidth = 3
+        // iconImage
+        iconImageView.image = #imageLiteral(resourceName: "c2015419-111-e1429434329480.jpg")
         backgroundImageView.addSubview(iconImageView)
         view.addSubview(backgroundImageView)
+        // nameLabel
+        let nameLabel = UILabel(frame: CGRect(x: CGFloat(DeviceSize.screenWidth / 4), y: iconImageView.bounds.height * 1.75, width: CGFloat(DeviceSize.screenWidth / 2), height: iconImageView.bounds.height / 2))
+        nameLabel.text = "テスト"
+        nameLabel.tintColor = UIColor.black
+        nameLabel.textAlignment = NSTextAlignment.center
+        backgroundImageView.addSubview(nameLabel)
     }
     // メニューの部分
     func SetButton() {
