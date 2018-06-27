@@ -12,13 +12,14 @@ class MessageListViewController: UIViewController {
     var name = "テスト" // <- マッチングした人の名前
     var age = 22
     var livingPlace = "東京都"
-    
+    private let MessageView = MessageViewController()
     var tableView: UITableView! = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SetTableView()
         self.view.backgroundColor = UIColor.white
+        SetTableView()
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = "メッセージ"
@@ -73,5 +74,9 @@ extension MessageListViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        MessageView.navigationItem.title = self.name
+        //MessageView.senderId = "Dummy"
+        //MessageView.senderDisplayName = "A"
+        self.present(MessageView, animated: true, completion: nil)
     }
 }

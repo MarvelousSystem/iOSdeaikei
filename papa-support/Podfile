@@ -7,6 +7,7 @@ target 'papa-support' do
 
   pod ‘Firebase/Core’
   pod ‘Firebase/Auth’
+  pod 'JSQMessagesViewController'
 
   # Pods for papa-support
 

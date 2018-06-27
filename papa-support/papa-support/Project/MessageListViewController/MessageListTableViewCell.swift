@@ -9,7 +9,7 @@
 import UIKit
 
 class MessageListTableViewCell: UITableViewCell {
-
+    
     var faceImageView: UIImageView!
     var faceImage: UIImage!
     var detail: UILabel!
