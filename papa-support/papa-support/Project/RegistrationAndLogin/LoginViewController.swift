@@ -62,6 +62,11 @@ class LoginViewController: UIViewController {
         self.view.addSubview(sendLoginInformationButtonButton)
     }
     @objc func tappedSendLoginInformationButton() {
+        
+        let first = MainTabController()
+        present(first, animated: true, completion: nil)
+        
+        /*
         let csrf = GetCSRF.getCSRF() // <- csrf
         if (csrf == "error") {print("csrfの取得に失敗しました")}
         else {
@@ -70,8 +75,18 @@ class LoginViewController: UIViewController {
             let element2: String = element.sha256
             let url2: String = "https://papa.support/api/v1/login/?tel=09024643115&password=\(element2)&csrf=\(csrf)"
             print(url2)
-            GetLoginInformation.get(url: url2)
-        }
+            if (GetLoginInformation.get(url: url2)) {
+                print("ログインに成功しました")
+                // 画面遷移
+                let first = MainTabController()
+                //var myNavigationController: UINavigationController?
+                //myNavigationController = UINavigationController(rootViewController: first)
+                //myNavigationController?.navigationBar.barTintColor = UIColor.white
+                present(first, animated: true, completion: nil)
+            } else {
+                print("ログインに失敗しました")
+            }
+        }*/
     }
     
 }

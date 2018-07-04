@@ -38,8 +38,11 @@ class ProfileViewController: UIViewController {
         iconImageView.layer.borderColor = UIColor.white.cgColor
         iconImageView.layer.borderWidth = 3
         // iconImage
+        iconImageView.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedIconImageView))
         iconImageView.image = #imageLiteral(resourceName: "c2015419-111-e1429434329480.jpg")
         backgroundImageView.addSubview(iconImageView)
+        view.addGestureRecognizer(tapGesture)
         view.addSubview(backgroundImageView)
         // nameLabel
         let nameLabel = UILabel(frame: CGRect(x: CGFloat(DeviceSize.screenWidth / 4), y: iconImageView.bounds.height * 1.75, width: CGFloat(DeviceSize.screenWidth / 2), height: iconImageView.bounds.height / 2))
@@ -47,6 +50,11 @@ class ProfileViewController: UIViewController {
         nameLabel.tintColor = UIColor.black
         nameLabel.textAlignment = NSTextAlignment.center
         backgroundImageView.addSubview(nameLabel)
+    }
+    @objc func tappedIconImageView() {
+        print("あああ")
+        let next = EditProfileViewController()
+        self.navigationController?.pushViewController(next, animated: true)
     }
     // メニューの部分
     func SetButton() {
