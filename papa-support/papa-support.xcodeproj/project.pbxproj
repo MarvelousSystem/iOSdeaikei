@@ -41,6 +41,7 @@
 		4E786A4120D79B2300D50A46 /* GetCSRF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4020D79B2300D50A46 /* GetCSRF.swift */; };
 		4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E786A4220D79B6500D50A46 /* GetJSON.swift */; };
 		4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */; };
+		4E80D60F20F09C78006523D3 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80D60E20F09C78006523D3 /* ExtensionString.swift */; };
 		4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */; };
 		4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */; };
 		4E88EE2520B2BAB000E3FC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E88EE2420B2BAB000E3FC92 /* Assets.xcassets */; };
@@ -55,11 +56,18 @@
 		4E8B341920E355D900C021BA /* c2015419-111-e1429434329480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B341820E355D900C021BA /* c2015419-111-e1429434329480.jpg */; };
 		4E8B341B20E3663B00C021BA /* MatchingDatailDMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B341A20E3663B00C021BA /* MatchingDatailDMViewController.swift */; };
 		4E9126F220E77A72007215B6 /* ViolationReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9126F120E77A72007215B6 /* ViolationReportViewController.swift */; };
+		4E92610720F9FA7000FF53DB /* HTTPCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92610620F9FA7000FF53DB /* HTTPCommunication.swift */; };
 		4E9B645320CE5DA1003C75B1 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B645220CE5DA1003C75B1 /* Base.lproj */; };
 		4E9B645420CE5DBC003C75B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9B645620CE5DBC003C75B1 /* GoogleService-Info.plist */; };
 		4EAF902520E3B72D00A4488A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF902420E3B72D00A4488A /* MessageViewController.swift */; };
 		4EAF902820E3C27200A4488A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF902720E3C27200A4488A /* EditProfileViewController.swift */; };
 		4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */; };
+		4EE4A67720F63BCA006ADEC3 /* FootprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67620F63BCA006ADEC3 /* FootprintViewController.swift */; };
+		4EE4A67920F63BE2006ADEC3 /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67820F63BE2006ADEC3 /* PointViewController.swift */; };
+		4EE4A67B20F63BEC006ADEC3 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67A20F63BEC006ADEC3 /* NoticeViewController.swift */; };
+		4EE4A67D20F63BFB006ADEC3 /* FromYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67C20F63BFB006ADEC3 /* FromYouViewController.swift */; };
+		4EE4A67F20F63C04006ADEC3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67E20F63C04006ADEC3 /* SettingsViewController.swift */; };
+		4EE4A68120F63C0F006ADEC3 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A68020F63C0F006ADEC3 /* HelpViewController.swift */; };
 		4EE8D8CE20D7D3DD00B27815 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */; };
 		4EE8D8D020D7EAC000B27815 /* MatchingListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */; };
 		4EE8D8D320D7EBF600B27815 /* MatchingDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */; };
@@ -104,6 +112,7 @@
 		4E786A4020D79B2300D50A46 /* GetCSRF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCSRF.swift; sourceTree = "<group>"; };
 		4E786A4220D79B6500D50A46 /* GetJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJSON.swift; sourceTree = "<group>"; };
 		4E7A458820C54A070061CD5C /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		4E80D60E20F09C78006523D3 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		4E88EE1A20B2BAB000E3FC92 /* papa-support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "papa-support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E88EE1D20B2BAB000E3FC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E88EE1F20B2BAB000E3FC92 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -120,12 +129,19 @@
 		4E8B341820E355D900C021BA /* c2015419-111-e1429434329480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "c2015419-111-e1429434329480.jpg"; sourceTree = "<group>"; };
 		4E8B341A20E3663B00C021BA /* MatchingDatailDMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDatailDMViewController.swift; sourceTree = "<group>"; };
 		4E9126F120E77A72007215B6 /* ViolationReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolationReportViewController.swift; sourceTree = "<group>"; };
+		4E92610620F9FA7000FF53DB /* HTTPCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCommunication.swift; sourceTree = "<group>"; };
 		4E9B645220CE5DA1003C75B1 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		4E9B645520CE5DBC003C75B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EAF902420E3B72D00A4488A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		4EAF902720E3C27200A4488A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewTableViewCell.swift; sourceTree = "<group>"; };
 		4EBBA25E20BE654F004AD6E9 /* papa-support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "papa-support.entitlements"; sourceTree = "<group>"; };
+		4EE4A67620F63BCA006ADEC3 /* FootprintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintViewController.swift; sourceTree = "<group>"; };
+		4EE4A67820F63BE2006ADEC3 /* PointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
+		4EE4A67A20F63BEC006ADEC3 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		4EE4A67C20F63BFB006ADEC3 /* FromYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromYouViewController.swift; sourceTree = "<group>"; };
+		4EE4A67E20F63C04006ADEC3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4EE4A68020F63C0F006ADEC3 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		4EE8D8CF20D7EAC000B27815 /* MatchingListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListPresenter.swift; sourceTree = "<group>"; };
 		4EE8D8D220D7EBF600B27815 /* MatchingDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDetailPageViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +178,7 @@
 			children = (
 				4E5DC31920D2747200689281 /* UIColorHex.swift */,
 				4EE8D8CD20D7D3DC00B27815 /* SHA256.swift */,
+				4E80D60E20F09C78006523D3 /* ExtensionString.swift */,
 				4E6B6F9120D1030400C4F3D8 /* BridgingHeader.h */,
 				4E68DF9520B5669500CA4CB2 /* Materials */,
 			);
@@ -192,6 +209,7 @@
 				4E686E3D20B8071200E68706 /* GetPersonDataFromId.swift */,
 				4E6B6F9620D1478700C4F3D8 /* LoginModel.swift */,
 				4E68DF9C20B580FD00CA4CB2 /* GetImageFromId.swift */,
+				4E92610620F9FA7000FF53DB /* HTTPCommunication.swift */,
 				4E686E3F20B8082400E68706 /* PersonDataStruct.swift */,
 				4E6F25CA20BBA43D0023730B /* AppConst.swift */,
 			);
@@ -204,6 +222,12 @@
 				4E88EE3A20B2EF6400E3FC92 /* ProfileViewController.swift */,
 				4EAF902920E3C27600A4488A /* EditProfile */,
 				4EAF902A20E3C28300A4488A /* Confirmation */,
+				4EE4A67020F63925006ADEC3 /* Footprint */,
+				4EE4A67120F6392D006ADEC3 /* Point */,
+				4EE4A67320F63997006ADEC3 /* FromYou */,
+				4EE4A67220F6394E006ADEC3 /* Notice */,
+				4EE4A67420F639F1006ADEC3 /* Settings */,
+				4EE4A67520F639FF006ADEC3 /* Help */,
 			);
 			path = ProfileViewController;
 			sourceTree = "<group>";
@@ -357,6 +381,54 @@
 				4E67C23A20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift */,
 			);
 			path = "Model-Firebase";
+			sourceTree = "<group>";
+		};
+		4EE4A67020F63925006ADEC3 /* Footprint */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4A67620F63BCA006ADEC3 /* FootprintViewController.swift */,
+			);
+			path = Footprint;
+			sourceTree = "<group>";
+		};
+		4EE4A67120F6392D006ADEC3 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4A67820F63BE2006ADEC3 /* PointViewController.swift */,
+			);
+			path = Point;
+			sourceTree = "<group>";
+		};
+		4EE4A67220F6394E006ADEC3 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4A67A20F63BEC006ADEC3 /* NoticeViewController.swift */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
+		4EE4A67320F63997006ADEC3 /* FromYou */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4A67C20F63BFB006ADEC3 /* FromYouViewController.swift */,
+			);
+			path = FromYou;
+			sourceTree = "<group>";
+		};
+		4EE4A67420F639F1006ADEC3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4A67E20F63C04006ADEC3 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4EE4A67520F639FF006ADEC3 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				4EE4A68020F63C0F006ADEC3 /* HelpViewController.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		4EE8D8CC20D7D36A00B27815 /* Gomi */ = {
@@ -537,22 +609,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E686E4220B80CE300E68706 /* ErrorSet.swift in Sources */,
+				4EE4A67720F63BCA006ADEC3 /* FootprintViewController.swift in Sources */,
 				4E8ACF2520EC7D9C006EEE79 /* ViolationReportScrollView.swift in Sources */,
 				4EE8D8D020D7EAC000B27815 /* MatchingListPresenter.swift in Sources */,
 				4EE8D8CE20D7D3DD00B27815 /* SHA256.swift in Sources */,
 				4E6B6F9720D1478700C4F3D8 /* LoginModel.swift in Sources */,
+				4EE4A67D20F63BFB006ADEC3 /* FromYouViewController.swift in Sources */,
 				4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */,
 				4E68E65220C1627E0096FF26 /* DetailViewController.swift in Sources */,
 				4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */,
 				4E5DC31720D2728600689281 /* StartViewController.swift in Sources */,
 				4EAF902820E3C27200A4488A /* EditProfileViewController.swift in Sources */,
 				4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */,
+				4EE4A68120F63C0F006ADEC3 /* HelpViewController.swift in Sources */,
 				4E8B341B20E3663B00C021BA /* MatchingDatailDMViewController.swift in Sources */,
 				4E88EE3920B2C24000E3FC92 /* MessageListViewController.swift in Sources */,
 				4E68E65620C170FB0096FF26 /* IconViewController.swift in Sources */,
 				4E7A458920C54A070061CD5C /* ConfirmationViewController.swift in Sources */,
 				4E68666020DA230600781162 /* MatchingDetailViewController.swift in Sources */,
 				4E6F25CB20BBA43D0023730B /* AppConst.swift in Sources */,
+				4E92610720F9FA7000FF53DB /* HTTPCommunication.swift in Sources */,
 				4E686E3E20B8071200E68706 /* GetPersonDataFromId.swift in Sources */,
 				4E6B6F3120D0E6FC00C4F3D8 /* UserInformation.swift in Sources */,
 				4E686E4020B8082400E68706 /* PersonDataStruct.swift in Sources */,
@@ -577,8 +653,12 @@
 				4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */,
 				4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */,
 				4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */,
+				4EE4A67F20F63C04006ADEC3 /* SettingsViewController.swift in Sources */,
 				4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */,
 				4E0A53C420DB89C9007B052D /* GetLoginInformation.swift in Sources */,
+				4E80D60F20F09C78006523D3 /* ExtensionString.swift in Sources */,
+				4EE4A67920F63BE2006ADEC3 /* PointViewController.swift in Sources */,
+				4EE4A67B20F63BEC006ADEC3 /* NoticeViewController.swift in Sources */,
 				4E68E65420C16F860096FF26 /* AdViewController.swift in Sources */,
 				4E67C23B20BE944A00DC03A5 /* FirebaseSmsAuthentication.swift in Sources */,
 				4E1D0ED820DA58D80058057B /* MatchingListDetailScrollView.swift in Sources */,

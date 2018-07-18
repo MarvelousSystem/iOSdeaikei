@@ -23,7 +23,7 @@ class MatchingListViewController: UIViewController {
         collectionView.register(MatchingListCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(MatchingListCollectionViewCell.self))
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = UIColor.white
+        collectionView.backgroundColor = UIColor(hex: "f5f5f5")
         view.addSubview(collectionView)
         self.view.backgroundColor = UIColor.white
         // Navigationbar

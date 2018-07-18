@@ -65,50 +65,137 @@ class ProfileViewController: UIViewController {
         button_1.setTitle("本人確認", for: UIControl.State.normal)
         button_1.setTitleColor(UIColor.black , for: UIControl.State.normal)
         button_1.addTarget(self, action: #selector(self.tapped), for: UIControl.Event.touchUpInside)
-        let border_1 = UIView(frame: CGRect(x: 0, y: button_1.frame.size.height - 2.0, width: button_1.frame.size.width, height: 2))
-        border_1.backgroundColor = UIColor.red
+        let border_1 = UIView(frame: CGRect(x: 0, y: button_1.frame.size.height - 0.5, width: button_1.frame.size.width, height: 0.5))
+        border_1.backgroundColor = UIColor.darkGray
         button_1.addSubview(border_1)
         self.view.addSubview(button_1)
-        // button_2
-        let button_2: UIButton = UIButton()
-        button_2.backgroundColor = UIColor.white
-        button_2.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + DeviceSize.screenHeight / 7 * 4 / 5), width: self.view.bounds.width, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
-        button_2.setTitle("ボタンのテキスト2", for: UIControl.State.normal)
-        button_2.setTitleColor(UIColor.black , for: UIControl.State.normal)
-        let border_2 = UIView(frame: CGRect(x: 0, y: button_2.frame.size.height - 2.0, width: button_2.frame.size.width, height: 2))
-        border_2.backgroundColor = UIColor.red
-        button_2.addSubview(border_2)
-        self.view.addSubview(button_2)
-        // button_3
-        let button_3: UIButton = UIButton()
-        button_3.backgroundColor = UIColor.white
-        button_3.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 2), width: self.view.bounds.width, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
-        button_3.setTitle("ボタンのテキスト", for: UIControl.State.normal)
-        button_3.setTitleColor(UIColor.black , for: UIControl.State.normal)
-        let border_3 = UIView(frame: CGRect(x: 0, y: button_3.frame.size.height - 2.0, width: button_3.frame.size.width, height: 2))
-        border_3.backgroundColor = UIColor.red
-        button_3.addSubview(border_3)
-        self.view.addSubview(button_3)
-        // button_4
-        let button_4: UIButton = UIButton()
-        button_4.backgroundColor = UIColor.white
-        button_4.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 3), width: self.view.bounds.width, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
-        button_4.setTitle("ボタンのテキスト", for: UIControl.State.normal)
-        button_4.setTitleColor(UIColor.black , for: UIControl.State.normal)
-        let border_4 = UIView(frame: CGRect(x: 0, y: button_4.frame.size.height - 2.0, width: button_4.frame.size.width, height: 2))
-        border_4.backgroundColor = UIColor.red
-        button_4.addSubview(border_4)
-        self.view.addSubview(button_4)
-        // button_5
-        let button_5: UIButton = UIButton()
-        button_5.backgroundColor = UIColor.white
-        button_5.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 4), width: self.view.bounds.width, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
-        button_5.setTitle("ボタンのテキスト", for: UIControl.State.normal)
-        button_5.setTitleColor(UIColor.black , for: UIControl.State.normal)
-        let border_5 = UIView(frame: CGRect(x: 0, y: button_5.frame.size.height - 2.0, width: button_5.frame.size.width, height: 2))
-        border_5.backgroundColor = UIColor.red
-        button_5.addSubview(border_5)
-        self.view.addSubview(button_5)
+        // button_2_1
+        let button_2_1: UIButton = UIButton()
+        button_2_1.backgroundColor = UIColor.white
+        button_2_1.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + DeviceSize.screenHeight / 7 * 4 / 5), width: self.view.bounds.width/2, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_2_1.setTitle("残ポイント", for: UIControl.State.normal)
+        button_2_1.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        let border_2_1 = UIView(frame: CGRect(x: 0, y: button_2_1.frame.size.height - 0.5, width: button_2_1.frame.size.width, height: 0.5))
+        border_2_1.backgroundColor = UIColor.darkGray
+        button_2_1.addSubview(border_2_1)
+        let border_2_1_2 = UIView(frame: CGRect(x: button_2_1.frame.width - 0.25, y: button_2_1.frame.height/4, width: 0.25, height: button_2_1.frame.height/2))
+        border_2_1_2.backgroundColor = UIColor.darkGray
+        button_2_1.addSubview(border_2_1_2)
+        self.view.addSubview(button_2_1)
+        // button_2_2
+        let button_2_2: UIButton = UIButton()
+        button_2_2.backgroundColor = UIColor.white
+        button_2_2.frame = CGRect(x: self.view.bounds.width/2, y: CGFloat(DeviceSize.screenHeight / 4 + DeviceSize.screenHeight / 7 * 4 / 5), width: self.view.bounds.width/2, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_2_2.setTitle("残いいね", for: UIControl.State.normal)
+        button_2_2.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        let border_2_2_1 = UIView(frame: CGRect(x: 0, y: button_2_2.frame.size.height - 0.5, width: button_2_2.frame.size.width, height: 0.5))
+        border_2_2_1.backgroundColor = UIColor.darkGray
+        button_2_2.addSubview(border_2_2_1)
+        let border_2_2_2 = UIView(frame: CGRect(x: 0, y: button_2_2.frame.height/4, width: 0.25, height: button_2_1.frame.height/2))
+        button_2_2.addSubview(border_2_2_2)
+        border_2_2_2.backgroundColor = UIColor.darkGray
+        self.view.addSubview(button_2_2)
+        // button_3_1
+        let button_3_1: UIButton = UIButton()
+        button_3_1.backgroundColor = UIColor.white
+        button_3_1.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 2), width: self.view.bounds.width / 3, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_3_1.setTitle("あしあと", for: UIControl.State.normal)
+        button_3_1.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        button_3_1.addTarget(self, action: #selector(self.tappedButton_3_1), for: UIControl.Event.touchUpInside)
+        let border_3_1 = UIView(frame: CGRect(x: 0, y: button_3_1.frame.size.height - 0.5, width: button_3_1.frame.size.width, height: 0.5))
+        border_3_1.backgroundColor = UIColor.darkGray
+        button_3_1.addSubview(border_3_1)
+        let border_3_1_2 = UIView(frame: CGRect(x: CGFloat(DeviceSize.screenWidth/3) - 0.25, y: button_3_1.frame.height/4, width: 0.25, height: button_3_1.frame.height/2))
+        border_3_1_2.backgroundColor = UIColor.darkGray
+        button_3_1.addSubview(border_3_1_2)
+        self.view.addSubview(button_3_1)
+        // button_3_2
+        let button_3_2: UIButton = UIButton()
+        button_3_2.backgroundColor = UIColor.white
+        button_3_2.frame = CGRect(x: self.view.bounds.width / 3, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 2), width: self.view.bounds.width / 3, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_3_2.setTitle("ポイント", for: UIControl.State.normal)
+        button_3_2.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        button_3_2.addTarget(self, action: #selector(self.tappedButton_3_2), for: UIControl.Event.touchUpInside)
+        let border_3_2 = UIView(frame: CGRect(x: 0, y: button_3_2.frame.size.height - 0.5, width: button_3_2.frame.size.width, height: 0.5))
+        border_3_2.backgroundColor = UIColor.darkGray
+        button_3_2.addSubview(border_3_2)
+        let border_3_2_2 = UIView(frame: CGRect(x: 0, y: button_3_2.frame.height/4, width: 0.25, height: button_3_2.frame.height/2))
+        border_3_2_2.backgroundColor = UIColor.darkGray
+        button_3_2.addSubview(border_3_2_2)
+        let border_3_2_3 = UIView(frame: CGRect(x: CGFloat(DeviceSize.screenWidth/3 * 2) - 0.25, y: button_3_2.frame.height/4, width: 0.25, height: button_3_2.frame.height/2))
+        border_3_2_3.backgroundColor = UIColor.darkGray
+        button_3_2.addSubview(border_3_2_3)
+        self.view.addSubview(button_3_2)
+        // button_3_3
+        let button_3_3: UIButton = UIButton()
+        button_3_3.backgroundColor = UIColor.white
+        button_3_3.frame = CGRect(x: self.view.bounds.width / 3 * 2, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 2), width: self.view.bounds.width / 3, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_3_3.setTitle("お知らせ", for: UIControl.State.normal)
+        button_3_3.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        button_3_3.addTarget(self, action: #selector(self.tappedButton_3_3), for: UIControl.Event.touchUpInside)
+        let border_3_3 = UIView(frame: CGRect(x: 0, y: button_3_3.frame.size.height - 0.5, width: button_3_3.frame.size.width, height: 0.5))
+        border_3_3.backgroundColor = UIColor.darkGray
+        button_3_3.addSubview(border_3_3)
+        let border_3_3_2 = UIView(frame: CGRect(x: 0, y: button_3_3.frame.height/4, width: 0.25, height: button_3_3.frame.height/2))
+        border_3_3_2.backgroundColor = UIColor.darkGray
+        button_3_3.addSubview(border_3_3_2)
+        self.view.addSubview(button_3_3)
+        // button_4_1
+        let button_4_1: UIButton = UIButton()
+        button_4_1.backgroundColor = UIColor.white
+        button_4_1.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 3), width: self.view.bounds.width/2, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_4_1.addTarget(self, action: #selector(self.tappedButton_4_1), for: UIControl.Event.touchUpInside)
+        button_4_1.setTitle("あなたから", for: UIControl.State.normal)
+        button_4_1.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        let border_4_1 = UIView(frame: CGRect(x: 0, y: button_4_1.frame.size.height - 0.5, width: button_4_1.frame.size.width, height: 0.5))
+        border_4_1.backgroundColor = UIColor.darkGray
+        button_4_1.addSubview(border_4_1)
+        let border_4_1_2 = UIView(frame: CGRect(x: CGFloat(DeviceSize.screenWidth/2) - 0.25, y: 0, width: 0.25, height: button_4_1.frame.height))
+        border_4_1_2.backgroundColor = UIColor.darkGray
+        button_4_1.addSubview(border_4_1_2)
+        self.view.addSubview(button_4_1)
+        // button_4_2
+        let button_4_2: UIButton = UIButton()
+        button_4_2.backgroundColor = UIColor.white
+        button_4_2.frame = CGRect(x: self.view.bounds.width/2, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 3), width: self.view.bounds.width/2, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_4_2.addTarget(self, action: #selector(self.tappedButton_4_2), for: UIControl.Event.touchUpInside)
+        button_4_2.setTitle("お気に入り", for: UIControl.State.normal)
+        button_4_2.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        let border_4_2 = UIView(frame: CGRect(x: 0, y: button_4_2.frame.size.height - 0.5, width: button_4_2.frame.size.width, height: 0.5))
+        border_4_2.backgroundColor = UIColor.darkGray
+        button_4_2.addSubview(border_4_2)
+        let border_4_2_2 = UIView(frame: CGRect(x: CGFloat(DeviceSize.screenWidth/2) - 0.25, y: 0, width: 0.25, height: button_4_2.frame.height))
+        border_4_2_2.backgroundColor = UIColor.darkGray
+        button_4_2.addSubview(border_4_2_2)
+        self.view.addSubview(button_4_2)
+        // button_5_1
+        let button_5_1: UIButton = UIButton()
+        button_5_1.backgroundColor = UIColor.white
+        button_5_1.frame = CGRect(x: 0, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 4), width: self.view.bounds.width/2, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_5_1.addTarget(self, action: #selector(self.tappedButton_5_1), for: UIControl.Event.touchUpInside)
+        button_5_1.setTitle("設定", for: UIControl.State.normal)
+        button_5_1.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        let border_5_1 = UIView(frame: CGRect(x: 0, y: button_5_1.frame.size.height - 0.5, width: button_5_1.frame.size.width, height: 0.5))
+        border_5_1.backgroundColor = UIColor.darkGray
+        button_5_1.addSubview(border_5_1)
+        let border_5_1_2 = UIView(frame: CGRect(x: CGFloat(DeviceSize.screenWidth/2) - 0.25, y: 0, width: 0.25, height: button_5_1.frame.height))
+        border_5_1_2.backgroundColor = UIColor.darkGray
+        button_5_1.addSubview(border_5_1_2)
+        self.view.addSubview(button_5_1)
+        // button_5_2
+        let button_5_2: UIButton = UIButton()
+        button_5_2.backgroundColor = UIColor.white
+        button_5_2.frame = CGRect(x: self.view.bounds.width/2, y: CGFloat(DeviceSize.screenHeight / 4 + (DeviceSize.screenHeight / 7 * 4 / 5) * 4), width: self.view.bounds.width/2, height: CGFloat(DeviceSize.screenHeight / 7 * 4 / 5))
+        button_5_2.addTarget(self, action: #selector(self.tappedButton_5_2), for: UIControl.Event.touchUpInside)
+        button_5_2.setTitle("ヘルプ", for: UIControl.State.normal)
+        button_5_2.setTitleColor(UIColor.black , for: UIControl.State.normal)
+        let border_5_2 = UIView(frame: CGRect(x: 0, y: button_5_2.frame.size.height - 0.5, width: button_5_2.frame.size.width, height: 0.5))
+        border_5_2.backgroundColor = UIColor.darkGray
+        button_5_2.addSubview(border_5_2)
+        let border_5_2_2 = UIView(frame: CGRect(x: CGFloat(DeviceSize.screenWidth/2), y: 0, width: 0.25, height: button_5_2.frame.height))
+        border_5_2_2.backgroundColor = UIColor.darkGray
+        button_5_1.addSubview(border_5_2_2)
+        self.view.addSubview(button_5_2)
     }
     // 広告の部分
     func setAd() {
@@ -122,56 +209,49 @@ class ProfileViewController: UIViewController {
     // ボタンがたっぷされた時に行う
     @objc func tapped() {
         let next = ConfirmationViewController()
-        let nav = UINavigationController(rootViewController: next)
-        present(nav, animated: true, completion: nil)
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_3_1
+    @objc func tappedButton_3_1() {
+        let next = FootprintViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_3_2
+    @objc func tappedButton_3_2() {
+        let next = PointViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_3_3
+    @objc func tappedButton_3_3() {
+        let next = NoticeViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_4_1
+    @objc func tappedButton_4_1() {
+        let next = FromYouViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_4_2
+    @objc func tappedButton_4_2() {
+        let next = NoticeViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_5_1
+    @objc func tappedButton_5_1() {
+        let next = SettingsViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
+    }
+    // button_5_2
+    @objc func tappedButton_5_2() {
+        let next = HelpViewController()
+        next.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(next, animated: true)
     }
 }
-    
-    
-    
-    
-    /*
-    // IconContainerView
-    func SetIconContainerView() {
-        var iconContainerView: UIView! = UIView()
-        // IconContainerViewの調整
-        iconContainerView = UIView(frame: CGRect(x: 0, y: DeviceSize.statusBarHeight, width: DeviceSize.screenWidth, height: DeviceSize.screenHeight / 4))
-        // IconContainerViewに格納するViewController
-        let iconViewController: IconViewController! = IconViewController()
-        iconViewController.view.tag = 1
-        iconViewController.view.frame = iconContainerView.bounds
-        // IconContanerの設定
-        iconContainerView.addSubview(iconViewController.view)
-        // Add
-        view.addSubview(iconContainerView)
-    }
-    // DetailContainerView
-    func SetDetailContainerView() {
-        var detailContainerView: UIView! = UIView()
-        // DetailContainerViewの生成
-        detailContainerView = UIView(frame: CGRect(x: 0, y :DeviceSize.screenHeight / 4, width: DeviceSize.screenWidth, height: DeviceSize.screenHeight / 7 * 4))
-        // DetailContainerに格納するViewController
-        let detailViewController: DetailViewController! = DetailViewController()
-        detailViewController.view.tag = 1
-        detailViewController.view.frame = detailContainerView.bounds
-        // DetailContainerの設定
-        detailContainerView.addSubview(detailViewController.view)
-        // Add
-        view.addSubview(detailContainerView)
-    }
-    // AdContainerView
-    func SetAdContainerView() {
-        var adContainerView: UIView! = UIView()
-        // AdContainerViewの調整
-        adContainerView = UIView(frame: CGRect(x: 0, y: DeviceSize.screenHeight * (1 / 4 + 1 / 7 * 4), width: DeviceSize.screenWidth, height: DeviceSize.screenHeight - DeviceSize.tabBarHeight - DeviceSize.screenHeight * (1 / 4 + 1 / 7 * 4)))
-        // AdContainerViewに格納するViewController
-        let adViewController: AdViewController! = AdViewController()
-        adViewController.view.tag = 1
-        adViewController.view.frame = adContainerView.bounds
-        // DetailContainerの設定
-        adContainerView.addSubview(adViewController.view)
-        // Add
-        view.addSubview(adContainerView)
-        
-    }
-    */
