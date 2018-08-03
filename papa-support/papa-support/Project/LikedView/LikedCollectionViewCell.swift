@@ -10,18 +10,21 @@ import UIKit
 
 class LikedCollectionViewCell: UICollectionViewCell {
     
-    var view: UIView!
-    var label: UILabel!
+    open var label: UILabel!
     override init(frame: CGRect) {
+        //タッチの検出を設定
         super.init(frame: frame)
-        self.view = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: CGFloat(DeviceSize.navigationbarHeight / 5 * 4)))
+        let View = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(DeviceSize.screenWidth/2), height: 50))
         self.label = UILabel()
-        self.label.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
+        self.label.frame = CGRect(x: 0, y: 0, width:View.frame.width, height:50)
         self.label.textAlignment = NSTextAlignment.center
-        self.label.center = self.view.center
-        view.addSubview(label)
-        self.backgroundColor = UIColor.white
-        self.addSubview(view)
+        self.label.center = View.center
+        
+        View.addSubview(label)
+        
+        self.backgroundColor = UIColor.darkGray
+        self.addSubview(View)
+        
     }
     required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)

@@ -4,7 +4,8 @@ import UIKit
 class FromYouViewController: UIViewController {
     
     // var of http communication
-    let data_post: [String: AnyObject] = ["userID":"123456" as AnyObject, "password":"123456" as AnyObject]
+    let data_post: [String: AnyObject] = ["username":"test" as AnyObject, "password":"password" as AnyObject, "login": "true" as AnyObject]
+    let data_get: String = "password=1234512345"
     
     // vars of cell
     var tableView: UITableView!
@@ -25,7 +26,7 @@ class FromYouViewController: UIViewController {
         self.setTableView()
         self.title = "あなたから"
         // HTTP POST通信
-        HTTPCommunication.get(getContent: "password=1234512345", url: "http://localhost:3000/FromYou")
+        HTTPCommunication.post(postContent: data_post, url: "http://localhost:8888/matching_datalist.php")
     }
     override func viewWillAppear(_ animated: Bool) {
         self.title = "あなたから"

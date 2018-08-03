@@ -62,6 +62,20 @@
 		4EAF902520E3B72D00A4488A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF902420E3B72D00A4488A /* MessageViewController.swift */; };
 		4EAF902820E3C27200A4488A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF902720E3C27200A4488A /* EditProfileViewController.swift */; };
 		4EBBA25820BE4381004AD6E9 /* LikedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */; };
+		4ECBE552211426E700C85736 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBE551211426E700C85736 /* MatchingViewController.swift */; };
+		4ECBE5542114270400C85736 /* nocheckbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE5532114270400C85736 /* nocheckbutton.png */; };
+		4ECBE5562114271000C85736 /* checkbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE5552114271000C85736 /* checkbutton.png */; };
+		4ECBE5582114271600C85736 /* Pokemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE5572114271600C85736 /* Pokemon.jpg */; };
+		4ECBE55A211427BA00C85736 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBE559211427BA00C85736 /* CameraViewController.swift */; };
+		4ECBE55C211427E100C85736 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBE55B211427E100C85736 /* ImageViewController.swift */; };
+		4ECBE55E2114289500C85736 /* AgeConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBE55D2114289500C85736 /* AgeConfirmViewController.swift */; };
+		4ECBE560211428A400C85736 /* icon_bigg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE55F211428A400C85736 /* icon_bigg.png */; };
+		4ECBE562211428AA00C85736 /* icon_reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE561211428AA00C85736 /* icon_reload.png */; };
+		4ECBE564211428B000C85736 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE563211428B000C85736 /* album.png */; };
+		4ECBE566211428B500C85736 /* dire.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE565211428B400C85736 /* dire.png */; };
+		4ECBE568211428BA00C85736 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE567211428B900C85736 /* camera.png */; };
+		4ECBE56A211428BE00C85736 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE569211428BE00C85736 /* plane.png */; };
+		4ECBE56C211428C300C85736 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBE56B211428C300C85736 /* plus.png */; };
 		4EE4A67720F63BCA006ADEC3 /* FootprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67620F63BCA006ADEC3 /* FootprintViewController.swift */; };
 		4EE4A67920F63BE2006ADEC3 /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67820F63BE2006ADEC3 /* PointViewController.swift */; };
 		4EE4A67B20F63BEC006ADEC3 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4A67A20F63BEC006ADEC3 /* NoticeViewController.swift */; };
@@ -136,6 +150,20 @@
 		4EAF902720E3C27200A4488A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewTableViewCell.swift; sourceTree = "<group>"; };
 		4EBBA25E20BE654F004AD6E9 /* papa-support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "papa-support.entitlements"; sourceTree = "<group>"; };
+		4ECBE551211426E700C85736 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
+		4ECBE5532114270400C85736 /* nocheckbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nocheckbutton.png; sourceTree = "<group>"; };
+		4ECBE5552114271000C85736 /* checkbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbutton.png; sourceTree = "<group>"; };
+		4ECBE5572114271600C85736 /* Pokemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pokemon.jpg; sourceTree = "<group>"; };
+		4ECBE559211427BA00C85736 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4ECBE55B211427E100C85736 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		4ECBE55D2114289500C85736 /* AgeConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeConfirmViewController.swift; sourceTree = "<group>"; };
+		4ECBE55F211428A400C85736 /* icon_bigg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bigg.png; sourceTree = "<group>"; };
+		4ECBE561211428AA00C85736 /* icon_reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_reload.png; sourceTree = "<group>"; };
+		4ECBE563211428B000C85736 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
+		4ECBE565211428B400C85736 /* dire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dire.png; sourceTree = "<group>"; };
+		4ECBE567211428B900C85736 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		4ECBE569211428BE00C85736 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		4ECBE56B211428C300C85736 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		4EE4A67620F63BCA006ADEC3 /* FootprintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintViewController.swift; sourceTree = "<group>"; };
 		4EE4A67820F63BE2006ADEC3 /* PointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
 		4EE4A67A20F63BEC006ADEC3 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +295,16 @@
 				4E88EE3820B2C24000E3FC92 /* MessageListViewController.swift */,
 				4E6B6F2E20D0C14E00C4F3D8 /* MessageListTableViewCell.swift */,
 				4EAF902420E3B72D00A4488A /* MessageViewController.swift */,
+				4ECBE559211427BA00C85736 /* CameraViewController.swift */,
+				4ECBE55B211427E100C85736 /* ImageViewController.swift */,
+				4ECBE55D2114289500C85736 /* AgeConfirmViewController.swift */,
+				4ECBE55F211428A400C85736 /* icon_bigg.png */,
+				4ECBE561211428AA00C85736 /* icon_reload.png */,
+				4ECBE563211428B000C85736 /* album.png */,
+				4ECBE565211428B400C85736 /* dire.png */,
+				4ECBE567211428B900C85736 /* camera.png */,
+				4ECBE569211428BE00C85736 /* plane.png */,
+				4ECBE56B211428C300C85736 /* plus.png */,
 			);
 			path = MessageListViewController;
 			sourceTree = "<group>";
@@ -371,6 +409,10 @@
 				4E6F25CE20BBA6430023730B /* LikeToViewController.swift */,
 				4E6F25D020BBB5A50023730B /* LikedCollectionViewCell.swift */,
 				4EBBA25720BE4381004AD6E9 /* LikedViewTableViewCell.swift */,
+				4ECBE551211426E700C85736 /* MatchingViewController.swift */,
+				4ECBE5532114270400C85736 /* nocheckbutton.png */,
+				4ECBE5552114271000C85736 /* checkbutton.png */,
+				4ECBE5572114271600C85736 /* Pokemon.jpg */,
 			);
 			path = LikedView;
 			sourceTree = "<group>";
@@ -543,14 +585,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E686E4420B80CFD00E68706 /* 0I9A6766ISUMI_TP_V.jpg in Resources */,
+				4ECBE568211428BA00C85736 /* camera.png in Resources */,
 				4E68DF9F20B5869500CA4CB2 /* sozai_20150329_chuui.jpg in Resources */,
 				4E1D0EDA20DA7CDB0058057B /* test.png in Resources */,
 				4E9B645420CE5DBC003C75B1 /* GoogleService-Info.plist in Resources */,
 				4E88EE2820B2BAB000E3FC92 /* LaunchScreen.storyboard in Resources */,
 				4E9B645320CE5DA1003C75B1 /* Base.lproj in Resources */,
+				4ECBE560211428A400C85736 /* icon_bigg.png in Resources */,
 				4E8B341920E355D900C021BA /* c2015419-111-e1429434329480.jpg in Resources */,
+				4ECBE5582114271600C85736 /* Pokemon.jpg in Resources */,
+				4ECBE5542114270400C85736 /* nocheckbutton.png in Resources */,
 				4E88EE2520B2BAB000E3FC92 /* Assets.xcassets in Resources */,
+				4ECBE56C211428C300C85736 /* plus.png in Resources */,
+				4ECBE5562114271000C85736 /* checkbutton.png in Resources */,
 				4E8B341720E3525C00C021BA /* DSC01831-680x451.jpg in Resources */,
+				4ECBE56A211428BE00C85736 /* plane.png in Resources */,
+				4ECBE562211428AA00C85736 /* icon_reload.png in Resources */,
+				4ECBE564211428B000C85736 /* album.png in Resources */,
+				4ECBE566211428B500C85736 /* dire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +669,7 @@
 				4EE4A67D20F63BFB006ADEC3 /* FromYouViewController.swift in Sources */,
 				4E6F25D120BBB5A50023730B /* LikedCollectionViewCell.swift in Sources */,
 				4E68E65220C1627E0096FF26 /* DetailViewController.swift in Sources */,
+				4ECBE552211426E700C85736 /* MatchingViewController.swift in Sources */,
 				4E88EE3B20B2EF6400E3FC92 /* ProfileViewController.swift in Sources */,
 				4E5DC31720D2728600689281 /* StartViewController.swift in Sources */,
 				4EAF902820E3C27200A4488A /* EditProfileViewController.swift in Sources */,
@@ -635,6 +688,7 @@
 				4EAF902520E3B72D00A4488A /* MessageViewController.swift in Sources */,
 				4E68DF9D20B580FD00CA4CB2 /* GetImageFromId.swift in Sources */,
 				4E88EE3520B2C21500E3FC92 /* MatchingListViewController.swift in Sources */,
+				4ECBE55C211427E100C85736 /* ImageViewController.swift in Sources */,
 				4E6B6F2F20D0C14E00C4F3D8 /* MessageListTableViewCell.swift in Sources */,
 				4E6F25CD20BBA6290023730B /* LikedFromViewController.swift in Sources */,
 				4E9126F220E77A72007215B6 /* ViolationReportViewController.swift in Sources */,
@@ -642,6 +696,7 @@
 				4E786A4120D79B2300D50A46 /* GetCSRF.swift in Sources */,
 				4E88EE2020B2BAB000E3FC92 /* MainTabController.swift in Sources */,
 				4E5DC31E20D27C2B00689281 /* LoginViewController.swift in Sources */,
+				4ECBE55A211427BA00C85736 /* CameraViewController.swift in Sources */,
 				4E68DF9720B5688F00CA4CB2 /* MatchingListCollectionViewCell.swift in Sources */,
 				4E77EC6120E0FCDF0067130E /* MatchingAppointmentSoonViewController.swift in Sources */,
 				4EE8D8D320D7EBF600B27815 /* MatchingDetailPageViewController.swift in Sources */,
@@ -653,6 +708,7 @@
 				4E88EE1E20B2BAB000E3FC92 /* AppDelegate.swift in Sources */,
 				4E5DC31C20D27C2000689281 /* RegisterViewController.swift in Sources */,
 				4E5DC31A20D2747200689281 /* UIColorHex.swift in Sources */,
+				4ECBE55E2114289500C85736 /* AgeConfirmViewController.swift in Sources */,
 				4EE4A67F20F63C04006ADEC3 /* SettingsViewController.swift in Sources */,
 				4E786A4320D79B6500D50A46 /* GetJSON.swift in Sources */,
 				4E0A53C420DB89C9007B052D /* GetLoginInformation.swift in Sources */,

@@ -24,10 +24,16 @@ class HTTPCommunication {
         }
         
         // use URLSessionDataTask
-        let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: {data, response, error in
+        let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: {(data, response, error) in
             if (error == nil) {
-                let result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
-                print(result)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                    let top = json as! NSArray
+                    print(top)
+                } catch {
+                    print(error)
+                }
+                
             } else {
                 print(error as Any)
             }
@@ -49,6 +55,7 @@ class HTTPCommunication {
         // use URLSessionDataTask
         let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: {data, response, error in
             if (error == nil) {
+                // JSONをパース
                 let result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
                 print(result)
             } else {

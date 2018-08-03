@@ -5,24 +5,22 @@ import UIKit
 // MARK: vars and lifecycles
 class LikedViewController: UIViewController {
     // vars
-    var collectionView: UICollectionView!
-    var pageControllers: [UIViewController]! = []
-    var containerView: UIView!
-    var childViewController: UIViewController!
-    let pageList = ["お相手から", "あなたから"]
+    private var pageControllers: [UIViewController]! = []
+    private var containerView: UIView!
+    private var childViewController: UIViewController!
     // lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        SetContainerView()
-        //SetCollectionViewSet()
-        
-        
-        
         self.view.backgroundColor = UIColor.white
+        SetContainerView()
+        
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = "いいね"
+        
     }
+    
     override func viewDidDisappear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = " "
     }
@@ -30,33 +28,15 @@ class LikedViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // CollectionView
-    func SetCollectionViewSet() {
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.minimumInteritemSpacing = 0.0
-        flowLayout.minimumLineSpacing = 0.0
-        flowLayout.itemSize = CGSize(width: self.view.bounds.width / 2 ,  height: CGFloat(DeviceSize.navigationbarHeight / 5 * 4))
-        let rec: CGRect = CGRect(x: 0, y: DeviceSize.statusBarHeight + DeviceSize.navigationbarHeight, width: DeviceSize.screenWidth, height: DeviceSize.navigationbarHeight / 5 * 4)
-        collectionView = UICollectionView(frame: rec, collectionViewLayout: flowLayout)
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        view.addSubview(collectionView)
-        // Layer
-        
-    }
     // ContainerView
     func SetContainerView() {
         // ContainerViewの生成
-        containerView = UIView(frame: CGRect(x: 0, y: DeviceSize.statusBarHeight + DeviceSize.navigationbarHeight * (1 + 1 / 5 * 4), width: DeviceSize.screenWidth, height: DeviceSize.screenHeight - DeviceSize.statusBarHeight))
+        containerView = UIView(frame: CGRect(x: 0, y: DeviceSize.statusBarHeight + DeviceSize.navigationbarHeight * (1 + 1 / 5 * 4)-40, width: DeviceSize.screenWidth, height: DeviceSize.screenHeight - DeviceSize.statusBarHeight))
         // Containerに格納するViewController
         let likedFromViewController: LikedFromViewController = LikedFromViewController()
         likedFromViewController.view.tag = 1
         likedFromViewController.view.frame = containerView.bounds
         self.pageControllers.append(likedFromViewController)
-        let likeToViewController: LikeToViewController = LikeToViewController()
-        likeToViewController.view.tag = 2
-        likeToViewController.view.frame = containerView.bounds
-        //  self.pageControllers.append(likeToViewController)
         // Containerの設定
         addChild(pageControllers[0])
         containerView.addSubview(pageControllers[0].view)
@@ -64,29 +44,11 @@ class LikedViewController: UIViewController {
         childViewController = pageControllers[0]
         // Add
         view.addSubview(containerView)
+        
     }
+    
 }
 
-// MARK: -UICollectionViewDelegate, UICollectionViewDataSource
-extension LikedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pageList.count
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        collectionView.register(LikedCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(LikedCollectionViewCell.self))
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(LikedCollectionViewCell.self), for: indexPath) as!
-        LikedCollectionViewCell
-        cell.label.text = pageList[indexPath.row]
-        return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
-        
-        //選択された所に遷移
-        
-        
-    }
-}
 
 
 
